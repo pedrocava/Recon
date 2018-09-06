@@ -2,7 +2,7 @@
 % Please edit documentation in R/grid_2.R
 \name{grid.2}
 \alias{grid.2}
-\title{Cobb-Douglas Model}
+\title{Cartesian coordinates generator}
 \usage{
 grid.2(a = 0, b = 100)
 }

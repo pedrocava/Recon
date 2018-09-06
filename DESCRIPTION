@@ -3,6 +3,7 @@ Title: Economics 101
 Version: 0.0.0.9000
 Authors@R: person("Pedro Cavalcante Oliveira", email = "pc_oliveira@id.uff.br", role = "aut")
 Description: The economics101 package implements several models present in economics.
+Maintainer: Pedro Cavalcante Oliveira <pc_oliveira@id.uff.br>
 Depends: R (>= 3.4.0)
 License: The MIT License
 Encoding: UTF-8

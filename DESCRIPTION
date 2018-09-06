@@ -1,10 +1,9 @@
 Package: economics101
-Title: Economics 101
+Title: What the Package Does (one line, title case)
 Version: 0.0.0.9000
-Authors@R: c(person("Pedro Cavalcante Oliveira", email = "pc_oliveira@id.uff.br", role = c("aut", "cre")))
-Description: The economics101 package implements several models present in economics.
-Maintainer: Pedro Cavalcante Oliveira <pc_oliveira@id.uff.br>
+Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
 Depends: R (>= 3.4.0)
-License: The MIT License
+License: What license is it under?
 Encoding: UTF-8
 LazyData: true

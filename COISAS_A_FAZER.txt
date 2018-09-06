@@ -1,0 +1,16 @@
+COISAS A IMPLEMENTAR:
+
+- Solução de Jogos (provavelmente fica com o Marcelo)
+ 	-Meu chute é que procurar pontos fixos é uma boa maneira.
+
+- Modelo de Solow
+- Demanda Marshalliana (só sendo necessario alimentar a função utilidade e uma restrição orçamentária)
+- Demanda Hicksiana (o mesmo de cima)
+- Modelo de Comércio Gravitacional
+- IS-LM
+- Solução de um duopólio de Cournot e Bertrand
+- Magia negra de software do Diego
+- Insumo-Produto (good god que horror)
+- Função Dispêndio
+- Função Utilidade Indireta
+- Curva de Phillips?

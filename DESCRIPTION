@@ -1,7 +1,7 @@
 Package: economics101
 Title: Economics 101
 Version: 0.0.0.9000
-Authors@R: c(person("Pedro Cavalcante Oliveira", email = "pc_oliveira@id.uff.br", role = c("aut")))
+Authors@R: c(person("Pedro Cavalcante Oliveira", email = "pc_oliveira@id.uff.br", role = c("aut", "cre")))
 Description: The economics101 package implements several models present in economics.
 Maintainer: Pedro Cavalcante Oliveira <pc_oliveira@id.uff.br>
 Depends: R (>= 3.4.0)

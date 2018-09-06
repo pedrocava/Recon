@@ -1,4 +1,4 @@
-#' Cobb-Douglas Model
+#' Cartesian coordinates generator
 #'
 #' This function creates a grid (more especifically, a 2-cell) of coordinates in R^2. Useful for plotting and generating data points with which to apply some functions. 
 #' @param a is the grid's lower bound. Defaults to 0.

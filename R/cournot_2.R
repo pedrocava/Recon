@@ -21,8 +21,8 @@
    profit1 = multiply(mg_cost1,demand) - firm1
    profit2 = multiply(mg_cost2,demand) - firm2
 
-   mg_profit1 = Deriv(profit1, x = q1)
-   mg_profit2 = Deriv(profit2, x = q2)
+   mg_profit1 = deriv.Sym(profit1, x = q1)
+   mg_profit2 = deriv.Sym(profit2, x = q2)
 
   q1 = uniroot(mg_profit1, lower = - 10000, upper = 10000)
   q2 = uniroot(mg_profit2, lower = - 10000, upper = 10000)

@@ -15,8 +15,8 @@
    require(Deriv)
    require(rSymPy)
 
-   mg_cost1 = Deriv(firm1)
-   mg_cost2 = Deriv(firm2)
+   mg_cost1 = deriv.Sym(firm1)
+   mg_cost2 = deriv.Sym(firm2)
 
    profit1 = multiply(mg_cost1,demand) - firm1
    profit2 = multiply(mg_cost2,demand) - firm2

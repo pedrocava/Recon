@@ -12,7 +12,7 @@
 
 
 
-cost1 = function(q1 = Var("q1"), q0_1 = 0, c1 = 1, c1_2 = 0)
+cost1 = function(q1 = Var("q1", class = c("Sym", "character")), q0_1 = 0, c1 = 1, c1_2 = 0)
   { require(rSymPy)
-  q0_1 + c1*q1 + c1_2 * q1 
+  q0_1 + c1*q1 + c1_2 * q1
   }

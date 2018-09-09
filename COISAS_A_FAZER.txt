@@ -1,3 +1,5 @@
+Aqui estão listados features que futuramente devem ser implementados
+
 COISAS A IMPLEMENTAR:
 
 - Solução de Jogos (provavelmente fica com o Marcelo)

@@ -12,8 +12,10 @@
 
 
 
-demand = function(q = Var("q", class = c("Sym", "character")), p_0, a = 1, b = 0)
-  {
+demand = function(q = Var("q", class = c("Sym", "character")), p_0, a = 1, b = 0) {
+
   require(rSymPy)
+
   p_0 + a*q + b*q^2
+
   }

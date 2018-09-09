@@ -11,8 +11,10 @@
 
 
 
- cournot_2 = function(firm1, firm2, demand){
-   require(Deriv)
+ cournot_2 = function(firm1,
+                      firm2,
+                      demand){
+
    require(rSymPy)
 
    mg_cost1 = deriv.Sym(firm1)
@@ -24,8 +26,8 @@
    mg_profit1 = deriv.Sym(profit1, x = q1)
    mg_profit2 = deriv.Sym(profit2, x = q2)
 
-  q1 = uniroot(mg_profit1, lower = - 10000, upper = 10000)
-  q2 = uniroot(mg_profit2, lower = - 10000, upper = 10000)
+  q1 = uniroot(mg_profit1, lower = - 1000000, upper = 1000000)
+  q2 = uniroot(mg_profit2, lower = - 1000000, upper = 1000000)
    q = q1 + q2
 
    q1sh = q1 / q

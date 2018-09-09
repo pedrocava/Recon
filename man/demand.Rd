@@ -4,7 +4,8 @@
 \alias{demand}
 \title{Inverse demand curve}
 \usage{
-demand(q = Var("q"), p_0, a = 1, b = 0)
+demand(q = Var("q", class = c("Sym", "character")), p_0, a = 1,
+  b = 0)
 }
 \arguments{
 \item{q}{is total output.}

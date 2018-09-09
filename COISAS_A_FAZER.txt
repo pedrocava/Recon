@@ -1,16 +1,17 @@
 COISAS A IMPLEMENTAR:
 
-- Solução de Jogos (provavelmente fica com o Marcelo)
- 	-Meu chute é que procurar pontos fixos é uma boa maneira.
+- SoluÃ§Ã£o de Jogos (provavelmente fica com o Marcelo)
+ 	-Meu chute Ã© que procurar pontos fixos Ã© uma boa maneira.
 
 - Modelo de Solow
-- Demanda Marshalliana (só sendo necessario alimentar a função utilidade e uma restrição orçamentária)
+- Demanda Marshalliana (sÃ³ sendo necessario alimentar a funÃ§Ã£o utilidade e uma restriÃ§Ã£o orÃ§amentÃ¡ria)
 - Demanda Hicksiana (o mesmo de cima)
-- Modelo de Comércio Gravitacional
+- Modelo de ComÃ©rcio Gravitacional
 - IS-LM
-- Solução de um duopólio de Cournot e Bertrand
+- SoluÃ§Ã£o de um duopÃ³lio de Cournot e Bertrand
 - Magia negra de software do Diego
 - Insumo-Produto (good god que horror)
-- Função Dispêndio
-- Função Utilidade Indireta
+- FunÃ§Ã£o DispÃªndio
+- FunÃ§Ã£o Utilidade Indireta
 - Curva de Phillips?
+- Modelo de Hotelling

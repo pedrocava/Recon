@@ -9,7 +9,7 @@ So far, the package covers:
 * Steady state solution to the model presented in Mankiw, Romer and Weil (1992)
 * Computing Cobb-Douglas functions with 2 inputs
 * Non-linear cost functions
-* Non-linear demand vurves
+* Non-linear demand curves
 * Grid generating function, so one can map results easily
 
 

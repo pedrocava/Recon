@@ -9,14 +9,18 @@
 #' @examples
 #' cournot_2()
 
-cournot_2 = function(firm1,
-                     firm2,
-                     demand){
+cournot_2 = function(q0_1 = 0, c1 = 1, c1_2 = 0,
+                     q0_2 = 0, c2 = 1, c2_2 = 0,
+                     p_0, a = 1, b = 0) {
+  
+  firm1 = call(0_1 + c1 * q1 + c1_2 * q1)
+  firm2 = call(q0_2 + c2 * q2 + c2_2 * q2)
+  q = call(q1 + q2)
+  
+  demand = call(p_0 + a*q + b * q^2)
   
   mg_cost1 = D(firm1, q1)
   mg_cost2 = D(firm2, q2)
-  
-  q = q1 + q2
   
   dem = demand(q)
   
@@ -40,4 +44,3 @@ cournot_2 = function(firm1,
                  q1_share = q1sh,
                  q1_share = q2sh)
 }
-

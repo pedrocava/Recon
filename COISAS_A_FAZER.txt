@@ -2,9 +2,6 @@ Aqui estão listados features que futuramente devem ser implementados
 
 COISAS A IMPLEMENTAR:
 
-- Solução de Jogos (provavelmente fica com o Marcelo)
- 	-Meu chute é que procurar pontos fixos é uma boa maneira.
-
 - Modelo de Solow
 - Demanda Marshalliana (só sendo necessario alimentar a função utilidade e uma restrição orçamentária)
 - Demanda Hicksiana (o mesmo de cima)

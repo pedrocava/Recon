@@ -9,36 +9,35 @@
 #' @examples
 #' cournot_2()
 
- cournot_2 = function(firm1,
-                      firm2,
-                      demand){
-
-   require(rSymPy)
-
-   mg_cost1 = deriv.Sym(firm1)
-   mg_cost2 = deriv.Sym(firm2)
-
-   q = q1 + q2
-   profit1 = multiply(mg_cost1,demand) - firm1
-   profit2 = multiply(mg_cost2,demand) - firm2
-
-   mg_profit1 = deriv.Sym(profit1, x = q1)
-   mg_profit2 = deriv.Sym(profit2, x = q2)
-
-  q1 = uniroot(mg_profit1, c( - 1000000, 1000000))
-  q2 = uniroot(mg_profit2, c( - 1000000, 1000000))
-
-
-   q1sh = q1 / q
-   q2sh = q2 / q
-
-   p = demand(q)
-
-
-  results = list(p = price,
-                 q = "total output",
-                 q1sh = q1sh,
-                 q1sh = q2sh)
-  }
-
+cournot_2 = function(firm1,
+                     firm2,
+                     demand){
+  
+  mg_cost1 = D(firm1, q1)
+  mg_cost2 = D(firm2, q2)
+  
+  q = q1 + q2
+  
+  dem = demand(q)
+  
+  profit1 = multiply(mg_cost1,dem) - firm1
+  profit2 = multiply(mg_cost2,dem) - firm2
+  
+  mg_profit1 = D(profit1, q1)
+  mg_profit2 = D(profit2, q2)
+  
+  q1_opt = uniroot(mg_profit1, c( - 1000000, 1000000))
+  q2_opt = uniroot(mg_profit2, c( - 1000000, 1000000))
+  
+  q1sh = q1_opt / q
+  q2sh = q2_opt / q
+  
+  p = demand(q)
+  
+  
+  results = list("price" = p,
+                 "total output" = q,
+                 q1_share = q1sh,
+                 q1_share = q2sh)
+}
 

@@ -17,6 +17,6 @@ cost1 = function(q1 = q1,
                  c1 = 1,
                  c1_2 = 0) {
   
-  q0_1 + c1*q1 + c1_2*q1
+  return(q0_1 + c1*q1 + c1_2*q1)
   
 }

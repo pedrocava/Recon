@@ -12,6 +12,11 @@
 
 
 
-cost2 = q0_2 + c2*q2 + c2_2*q2
-  
-
+cost2 = function(q2 = "q2",
+                  q0_2 = 0,
+                  c2 = 1,
+                  c2_2 = 0) {
+   
+   return(q0_2 + c2*q2 + c2_2*q2)
+   
+ }

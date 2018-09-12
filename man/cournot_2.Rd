@@ -4,7 +4,8 @@
 \alias{cournot_2}
 \title{Cournot Duopoly}
 \usage{
-cournot_2(firm1, firm2, demand)
+cournot_2(q0_1 = 0, c1 = 1, c1_2 = 0, q0_2 = 0, c2 = 1,
+  c2_2 = 0, p_0, a = 1, b = 0)
 }
 \arguments{
 \item{firm1}{is a cost function. cost1 is provided in this package.}

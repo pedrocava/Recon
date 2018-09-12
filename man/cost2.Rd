@@ -4,8 +4,7 @@
 \alias{cost2}
 \title{Cost function}
 \usage{
-cost2(q2 = Var("q2", class = c("Sym", "character")), q0_2 = 0,
-  c2 = 1, c2_2 = 0)
+cost2(q2 = "q2", q0_2 = 0, c2 = 1, c2_2 = 0)
 }
 \arguments{
 \item{q2}{is output.}

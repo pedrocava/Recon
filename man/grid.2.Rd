@@ -4,12 +4,14 @@
 \alias{grid.2}
 \title{Cartesian coordinates generator}
 \usage{
-grid.2(a = 0, b = 100)
+grid.2(a = 0, b = 100, c = 0.5)
 }
 \arguments{
 \item{a}{is the grid's lower bound. Defaults to 0.}
 
 \item{b}{is the grid's upper bound. Defaults to 100.}
+
+\item{c}{is the "by" parameter, the grid's density. Defaults to .5.}
 }
 \description{
 This function creates a grid (more especifically, a 2-cell) of coordinates in R^2. Useful for plotting and generating data points with which to apply some functions.

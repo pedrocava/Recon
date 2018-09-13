@@ -11,7 +11,8 @@ So far, the package covers:
 * Non-linear cost functions
 * Non-linear demand curves
 * Grid generating function, so one can map results easily
-* Finds the Nash Equilibrium of a 2 person, pure strategy game
+* Finds the Pure Nash Equilibrium of a 2 person simultaneous game 
+* Finds the Mixed Nash Equilibrium of a 2 person simultaneous game, for 2x2 matrices
 
 
 Things that are currently under work:

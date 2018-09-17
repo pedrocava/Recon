@@ -27,8 +27,10 @@ cournot_2 = function(q0_1 = 0, c1 = 1, c1_2 = 0,
   mg_profit1 = function() {D(profit1, "q1")} #marginal profits
   mg_profit2 = function() {D(profit2, "q2")}
 
-  q1_opt = uniroot(mg_profit1) # locates optimal production
-  q2_opt = uniroot(mg_profit2)
+  q1_opt = uniroot(mg_profit1,
+                   interval = c(-10000000, 10000000)) # locates optimal production
+  q2_opt = uniroot(mg_profit2,
+                   interval = c(-10000000, 10000000))
 
   q = q1_opt + q2_opt
 

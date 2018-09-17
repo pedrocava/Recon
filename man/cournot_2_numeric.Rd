@@ -5,7 +5,7 @@
 \title{Cournot Duopoly with numeric solution}
 \usage{
 cournot_2_numeric(c1_0 = 0, c1_1 = 1, c1_2 = 0, c2_0 = 0,
-  c2_1 = 1, c2_2 = 0, p_0 = 0, p_1 = 1, p_2 = 0)
+  c2_1 = 1, c2_2 = 0, p_0 = 0, p_1 = -1, p_2 = 0)
 }
 \arguments{
 \item{c1_0}{intercept of firm 1's cost function}

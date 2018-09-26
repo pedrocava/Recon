@@ -23,4 +23,6 @@ solow_steady_state <- function(n = .01,
 
 results = list(k = "Capital per capita",
                y = "Income per capita")
+
+print(results)
   }

@@ -32,5 +32,6 @@ MRW_steady_state <- function(n = .01,
   results = list(h = "Human Capital per capita",
                  k = "Capital per capita",
                  y = "Income per capita")
+  print(results)
 }
 

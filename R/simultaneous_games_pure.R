@@ -33,7 +33,7 @@ sgps <- function(a, b){ ## Os argumentos são as matrizes nxn de payoff do jogad
   j <- 1 ## Criando índices para o while
 
   matriz <- matrix(NA, nrow = length(a), ncol = 2, dimnames =
-                     list(paste(rep("Equilíbrio", length(a)), seq(1:length(a))), c("row", "col"))) ## Criando o contâiner para os equilíbrios
+                     list(paste(rep("Equilibirum", length(a)), seq(1:length(a))), c("row", "col"))) ## Criando o contâiner para os equilíbrios
 
   while (i <= nrow(matriz_br$pos_linha)){ ## Achando o equilíbrio de Nash, isto é, comparando as melhores respostas
     while (j <= nrow(matriz_br$pos_coluna)){
@@ -49,6 +49,6 @@ sgps <- function(a, b){ ## Os argumentos são as matrizes nxn de payoff do jogad
   if (!is.logical(matriz[complete.cases(matriz), ])) { ## Testando se há equilíbrio
       print(matriz[complete.cases(matriz), ]) ## Printando resultado
   } else {
-      print("Não há equilíbrio em estratégias puras", quote = F)
+      print("There's no pure strategies equilibrium", quote = F)
     }
 }

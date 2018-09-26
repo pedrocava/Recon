@@ -10,20 +10,21 @@
 #' cobb.douglas.2()
 
 
-cobb_douglas_2 <- function(x, 
-                           TFP = 1, 
-                           alpha = round(runif(n=1, 
-                                               min=0, 
+cobb_douglas_2 <- function(x,
+                           TFP = 1,
+                           alpha = round(runif(n=1,
+                                               min=0,
                                                max=1), digits = 2),
                            beta = 1 - alpha) {
   y = vector()
-  
+
   for (i in 1:nrow(x)) {
-    
+
     y[i] = TFP * x[i,1]^alpha * x[i,2]^beta
-    
+
   }
-  cobb.douglas = list(y = y, 
+  cobb.douglas = list(y = y,
                       alpha = alpha,
                       beta = beta)
+  print(cobb.douglas)
 }

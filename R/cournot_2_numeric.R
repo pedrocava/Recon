@@ -38,4 +38,5 @@ cournot_2_numeric = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
   results = list("price" = p,
                  "output_1" = q_1,
                  "output_2" = q_2)
+  print(results)
 }

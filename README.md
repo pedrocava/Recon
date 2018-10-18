@@ -13,10 +13,9 @@ So far, the package covers:
 * Grid generating function, so one can map results easily
 * Finds the Pure Nash Equilibrium of a 2 person simultaneous game 
 * Finds the Mixed Nash Equilibrium of a 2 person simultaneous game, for 2x2 matrices
-
+* Numerically finds the solution to a Cournot Duopoly Model, with linear and non-linear cost and demand curves
 
 Things that are currently under work:
 
-* Solution to a Cournot Duopoly
 * Computing Cobb-Douglas functions with $n$-inputs
 

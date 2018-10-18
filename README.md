@@ -18,4 +18,6 @@ So far, the package covers:
 Things that are currently under work:
 
 * Computing Cobb-Douglas functions with $n$-inputs
+* Solution to a Stackelberg Duopoly Model
+* Solution to a Bertrand Duopoly Model with differentiated goods
 

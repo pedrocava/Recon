@@ -2,7 +2,7 @@
 % Please edit documentation in R/cobb_douglas_2.R
 \name{cobb_douglas_2}
 \alias{cobb_douglas_2}
-\title{Cobb-Douglas Model}
+\title{2 inputs Cobb-Douglas Model}
 \usage{
 cobb_douglas_2(x, TFP = 1, alpha = round(runif(n = 1, min = 0, max =
   1), digits = 2), beta = 1 - alpha)

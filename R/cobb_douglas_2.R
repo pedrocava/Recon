@@ -1,4 +1,4 @@
-#' Cobb-Douglas Model
+#' 2 inputs Cobb-Douglas Model
 #'
 #' This function allows you to compute a Cobb-Douglas production/ utility function with two inputs/goods.
 #' @param x is a data frame with two columns.

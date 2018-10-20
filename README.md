@@ -8,6 +8,7 @@ So far, the package covers:
 * Steady state solution to the model presented in Solow (1956)
 * Steady state solution to the model presented in Mankiw, Romer and Weil (1992)
 * Computing Cobb-Douglas functions with 2 inputs
+* Computing Cobb-Douglas functions with $n$-inputs
 * Non-linear cost functions
 * Non-linear demand curves
 * Grid generating function, so one can map results easily
@@ -17,7 +18,6 @@ So far, the package covers:
 
 Things that are currently under work:
 
-* Computing Cobb-Douglas functions with $n$-inputs
 * Solution to a Stackelberg Duopoly Model
 * Solution to a Bertrand Duopoly Model with differentiated goods
 

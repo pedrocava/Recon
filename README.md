@@ -1,5 +1,4 @@
-# Recon
-Development of the Economics with R package
+# Recon - Economics with R
 
 This package aims to provide undergraduate students and teachers realiable ways of computing and exploring canonical models in economics. 
 

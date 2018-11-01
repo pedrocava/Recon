@@ -4,10 +4,9 @@ COISAS A IMPLEMENTAR:
 
 - Modelo de Comércio Gravitacional
 - IS-LM
-- Solução de um duopólio de Cournot e Bertrand
+- Solução de um duopólio de Bertrand com diferenciação
+- Duopólio de Stackelberg
 - Magia negra de software do Diego
 - Insumo-Produto (good god que horror)
-- Função Dispêndio
-- Função Utilidade Indireta
 - Curva de Phillips?
 - Modelo de Hotelling

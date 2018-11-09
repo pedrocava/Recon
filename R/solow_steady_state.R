@@ -6,10 +6,7 @@
 #' @param n is population growth rate. Defaults to 1%.
 #' @param alpha is capital-output elasticity. Defaults to .5.
 #' @param g is the technological growth rate. Defaults to 1%.
-#' @keywords macroeconomics growth theory
 #' @export
-#' @examples
-#' solow_steady_state()
 
 solow_steady_state <- function(n = .01,
                                g = .01,

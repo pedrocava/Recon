@@ -4,10 +4,7 @@
 #' @param x is a data frame with two columns.
 #' @param alpha is the first input's elasticity. Defaults to a random number between 0 and 1, rounded to two digits.
 #' @param beta is the second input's elasticity. Defaults to 1 - alpha.
-#' @keywords microeconomics
 #' @export
-#' @examples
-#' cobb.douglas.2()
 
 
 cobb_douglas_2 <- function(x,

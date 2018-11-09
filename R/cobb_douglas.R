@@ -7,10 +7,7 @@
 #' @param Elas is a vector of elasticities, must be the same length as I.
 #' @param K is the constant of the model. Defaults to 1.
 #' @param log is logical. If TRUE, then output is in natural logarithm. Defaults to FALSE.
-#' @keywords microeconomics
 #' @export
-#' @examples
-#' cobb.douglas()
 
 
 cobb_douglas <- function(I,

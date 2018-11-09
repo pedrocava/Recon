@@ -14,4 +14,3 @@ sgms(a, b)
 \description{
 This function finds the Nash equilibrium in mixed strategies of a 2-person simultaneous game. The function works only for 2x2 matrices,
 }
-\keyword{microeconomic.}

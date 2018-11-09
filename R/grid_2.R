@@ -4,10 +4,7 @@
 #' @param a is the grid's lower bound. Defaults to 0.
 #' @param b is the grid's upper bound. Defaults to 100.
 #' @param c is the "by" parameter, the grid's density. Defaults to .5.
-#' @keywords microeconomics
 #' @export
-#' @examples
-#' grid.2()
 
 grid.2 <- function(a=0, b=100, c = .5) {
 

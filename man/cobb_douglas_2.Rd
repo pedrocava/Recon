@@ -17,7 +17,3 @@ cobb_douglas_2(x, TFP = 1, alpha = round(runif(n = 1, min = 0, max =
 \description{
 This function allows you to compute a Cobb-Douglas production/ utility function with two inputs/goods.
 }
-\examples{
-cobb.douglas.2()
-}
-\keyword{microeconomics}

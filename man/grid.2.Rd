@@ -16,7 +16,3 @@ grid.2(a = 0, b = 100, c = 0.5)
 \description{
 This function creates a grid (more especifically, a 2-cell) of coordinates in R^2. Useful for plotting and generating data points with which to apply some functions.
 }
-\examples{
-grid.2()
-}
-\keyword{microeconomics}

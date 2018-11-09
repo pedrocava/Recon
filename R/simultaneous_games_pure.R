@@ -3,9 +3,7 @@
 #' This function finds the Nash equilibrium in pure strategies of a 2-person simultaneous game.
 #' @param a is the row player's payoff matrix.
 #' @param b is the column player's payoff matrix.
-#' @keywords microeconomics
 #' @export
-#' @examples
 
 sgps <- function(a, b){ ## Os argumentos são as matrizes nxn de payoff do jogador das linhas e do jogador das colunas, respectivamente
 

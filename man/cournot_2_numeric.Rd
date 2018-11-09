@@ -30,9 +30,3 @@ cournot_2_numeric(c1_0 = 0, c1_1 = 1, c1_2 = 0, c2_0 = 0,
 This function numerically finds the equilibrium in a Cournot duopoly model with quadratic functions. For guaranteed existence of equilibrium, the parameters should be non-negative.
 The general functional form for a function of argument x is f(x) = p_0 + p_1 * x + p_2 * x^2. Parameters c1 and c2 refer to firms 1 and 2. Parameters p refer to the inverse demand function.
 }
-\examples{
-cournot_2_numeric()
-}
-\keyword{competition}
-\keyword{imperfect}
-\keyword{microeconomics}

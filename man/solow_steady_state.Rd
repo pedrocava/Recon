@@ -21,9 +21,3 @@ solow_steady_state(n = 0.01, g = 0.01, alpha = 0.5, s = 0.01,
 \description{
 This function computes steady state income and capital per worker given relevant parameters according to the canonical model proposed by Solow (1956).
 }
-\examples{
-solow_steady_state()
-}
-\keyword{growth}
-\keyword{macroeconomics}
-\keyword{theory}

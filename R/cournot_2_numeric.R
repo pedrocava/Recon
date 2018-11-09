@@ -11,10 +11,7 @@
 #' @param p_0 intercept of inverse demand function
 #' @param p_1 linear term of inverse demand function
 #' @param p_2 quadratic term of inverse demand function
-#' @keywords microeconomics imperfect competition
 #' @export
-#' @examples
-#' cournot_2_numeric()
 
 cournot_2_numeric = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
                      c2_0 = 0, c2_1 = 1, c2_2 = 0,

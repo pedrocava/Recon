@@ -9,10 +9,7 @@
 #' @param alpha is capital-output elasticity. Defaults to .33 as estimated by Mankiw, Romer and Weil.
 #' @param beta is the human capital-output elasciticy. Defatults to .33 as estimated by Mankiw, Romer and Weil.
 #' @param g is the technological growth rate. Defaults to 1%.
-#' @keywords macroeconomics growth theory
 #' @export
-#' @examples
-#' MRW_steady_state()
 
 
 MRW_steady_state <- function(n = .01,

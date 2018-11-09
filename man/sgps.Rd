@@ -14,4 +14,3 @@ sgps(a, b)
 \description{
 This function finds the Nash equilibrium in pure strategies of a 2-person simultaneous game.
 }
-\keyword{microeconomics}

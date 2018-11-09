@@ -3,9 +3,7 @@
 #' This function finds the Nash equilibrium in mixed strategies of a 2-person simultaneous game. The function works only for 2x2 matrices,
 #' @param a is the row player's payoff matrix.
 #' @param b is the column player's payoff matrix.
-#' @keywords microeconomic.
 #' @export
-#' @examples
 
 sgms <- function(a, b) {
   if (isTRUE(all.equal(dim(a), c(2, 2)))) { ## Testando se a matriz é 2x2

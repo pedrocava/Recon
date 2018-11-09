@@ -8,8 +8,6 @@ So far, the package covers:
 * Steady state solution to the model presented in Mankiw, Romer and Weil (1992)
 * Computing Cobb-Douglas functions with 2 inputs
 * Computing Cobb-Douglas functions with $n$-inputs
-* Non-linear cost functions
-* Non-linear demand curves
 * Grid generating function, so one can map results easily
 * Finds the Pure Nash Equilibrium of a 2 person simultaneous game 
 * Finds the Mixed Nash Equilibrium of a 2 person simultaneous game, for 2x2 matrices

@@ -14,9 +14,9 @@
 
 
 cobb_douglas <- function(I,
-                           Elas,
-                           K = 1,
-                           log = FALSE) {
+                         Elas,
+                         K = 1,
+                         log = FALSE) {
 
   if(length(I) == length(Elas)){
   Q = I * Elas

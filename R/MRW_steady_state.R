@@ -12,7 +12,7 @@
 #' @keywords macroeconomics growth theory
 #' @export
 #' @examples
-#' demand()
+#' MRW_steady_state()
 
 
 MRW_steady_state <- function(n = .01,

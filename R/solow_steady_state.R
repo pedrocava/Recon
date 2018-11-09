@@ -9,8 +9,7 @@
 #' @keywords macroeconomics growth theory
 #' @export
 #' @examples
-#' demand()
-#'
+#' solow_steady_state()
 
 solow_steady_state <- function(n = .01,
                                g = .01,

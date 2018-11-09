@@ -14,8 +14,6 @@ cobb_douglas <- function(I,
                          Elas,
                          K = 1,
                          log = FALSE) {
-
-  if(length(I) == length(Elas)){
   Q = I * Elas
   S = prod(Q)
   y = K * S
@@ -29,6 +27,5 @@ cobb_douglas <- function(I,
                              log = log) )
 
   print(cobb.douglas)
-  } else
-    {print("I and Elas must be of the same length")}
+
 }

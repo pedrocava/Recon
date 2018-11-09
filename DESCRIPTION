@@ -1,7 +1,15 @@
 Package: Recon
 Title: Economics with R
 Version: 0.1.0.9000
-Authors@R: person("Pedro", "Cavalcante Oliveira", email = "pedrocolrj@gmail.com", role = c("aut", "cre"))
+Authors@R: c(person("Pedro", "Cavalcante Oliveira", 
+              email = "pedrocolrj@gmail.com", 
+              role = c("aut", "cre")),
+              person(given = "Diego", family = "S. Cardoso",
+              email = "mail@diegoscardoso.com",
+              role = "aut"),
+              person(given = "Marcelo", family = "Gelati",
+              role = "aut",
+              email = "marcelogelati@gmail.com"))
 Description: Implements and computes several economic models. 
 Depends: R (>= 3.4.0)
 License: The MIT License

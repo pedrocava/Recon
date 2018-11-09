@@ -1,6 +1,6 @@
 Package: Recon
 Title: Economics with R
-Version: 0.7.0.9000
+Version: 0.1.0.9000
 Authors@R: person("Pedro", "Cavalcante Oliveira", email = "pedrocolrj@gmail.com", role = c("aut", "cre"))
 Description: Implements and computes several economic models. 
 Depends: R (>= 3.4.0)

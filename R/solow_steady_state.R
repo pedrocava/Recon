@@ -2,10 +2,10 @@
 #'
 #' This function computes steady state income and capital per worker given relevant parameters according to the canonical model proposed by Solow (1956).
 #' @param s is the savings rate. Defaults to 1%.
-#' @param delta is the capital stock's depreciation rate. Defaults to 1%.
-#' @param n is population growth rate. Defaults to 1%.
+#' @param delta is the capital stock's depreciation rate. Defaults to .01.
+#' @param n is population growth rate. Defaults to .01.
 #' @param alpha is capital-output elasticity. Defaults to .5.
-#' @param g is the technological growth rate. Defaults to 1%.
+#' @param g is the technological growth rate. Defaults to .01.
 #' @export
 
 solow_steady_state <- function(n = .01,

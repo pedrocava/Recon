@@ -8,15 +8,15 @@ solow_steady_state(n = 0.01, g = 0.01, alpha = 0.5, s = 0.01,
   delta = 0.01)
 }
 \arguments{
-\item{n}{is population growth rate. Defaults to 1%.}
+\item{n}{is population growth rate. Defaults to .01.}
 
-\item{g}{is the technological growth rate. Defaults to 1%.}
+\item{g}{is the technological growth rate. Defaults to .01.}
 
 \item{alpha}{is capital-output elasticity. Defaults to .5.}
 
 \item{s}{is the savings rate. Defaults to 1%.}
 
-\item{delta}{is the capital stock's depreciation rate. Defaults to 1%.}
+\item{delta}{is the capital stock's depreciation rate. Defaults to .01.}
 }
 \description{
 This function computes steady state income and capital per worker given relevant parameters according to the canonical model proposed by Solow (1956).

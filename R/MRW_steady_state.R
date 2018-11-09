@@ -1,14 +1,14 @@
 #' Mankiw-Romer-Weil Growth Model Steady State
 #'
 #' This function computes steady state income, capital and human capital per worker given relevant parameters according to the modelo presented in Mankiw, Romer and Weil (1992).
-#' @param sk is the savings rate devoted to physical capital. Defaults to 1%.
-#' @param sh is the savings rate devoted to human capital. Defaults to 1%.
-#' @param delta is the physical capital stock's depreciation rate. Defaults to 1%.
+#' @param sk is the savings rate devoted to physical capital. Defaults to .01.
+#' @param sh is the savings rate devoted to human capital. Defaults to 0.1.
+#' @param delta is the physical capital stock's depreciation rate. Defaults to .01.
 #' @param gamma is the human capital stock's depreciation rate. Defaults to 0.
-#' @param n is population growth rate. Defaults to 1%.
+#' @param n is population growth rate. Defaults to .01.
 #' @param alpha is capital-output elasticity. Defaults to .33 as estimated by Mankiw, Romer and Weil.
 #' @param beta is the human capital-output elasciticy. Defatults to .33 as estimated by Mankiw, Romer and Weil.
-#' @param g is the technological growth rate. Defaults to 1%.
+#' @param g is the technological growth rate. Defaults to .01.
 #' @export
 
 

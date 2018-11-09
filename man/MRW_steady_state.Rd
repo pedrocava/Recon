@@ -8,19 +8,19 @@ MRW_steady_state(n = 0.01, g = 0.01, alpha = 0.33, beta = 0.33,
   sk = 0.01, sh = 0.01, delta = 0.01, gamma = 0)
 }
 \arguments{
-\item{n}{is population growth rate. Defaults to 1%.}
+\item{n}{is population growth rate. Defaults to .01.}
 
-\item{g}{is the technological growth rate. Defaults to 1%.}
+\item{g}{is the technological growth rate. Defaults to .01.}
 
 \item{alpha}{is capital-output elasticity. Defaults to .33 as estimated by Mankiw, Romer and Weil.}
 
 \item{beta}{is the human capital-output elasciticy. Defatults to .33 as estimated by Mankiw, Romer and Weil.}
 
-\item{sk}{is the savings rate devoted to physical capital. Defaults to 1%.}
+\item{sk}{is the savings rate devoted to physical capital. Defaults to .01.}
 
-\item{sh}{is the savings rate devoted to human capital. Defaults to 1%.}
+\item{sh}{is the savings rate devoted to human capital. Defaults to 0.1.}
 
-\item{delta}{is the physical capital stock's depreciation rate. Defaults to 1%.}
+\item{delta}{is the physical capital stock's depreciation rate. Defaults to .01.}
 
 \item{gamma}{is the human capital stock's depreciation rate. Defaults to 0.}
 }

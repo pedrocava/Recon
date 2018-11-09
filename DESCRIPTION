@@ -1,8 +1,8 @@
 Package: Recon
 Title: Economics with R
-Version: 0.0.0.9000
-Authors@R: person("Pedro", "Cavalcante Oliveira", email = "pc_olivera@id.uff.br", role = c("aut", "cre"))
-Description: Implements and computes several economic models. It also provides functions to create useful objetcs such as demand curves and cost functions through symbolic computation.
+Version: 0.7.0.9000
+Authors@R: person("Pedro", "Cavalcante Oliveira", email = "pedrocolrj@gmail.com", role = c("aut", "cre"))
+Description: Implements and computes several economic models. 
 Depends: R (>= 3.4.0)
 License: The MIT License
 Encoding: UTF-8

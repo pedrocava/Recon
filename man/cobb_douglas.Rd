@@ -9,7 +9,7 @@ cobb_douglas(I, Elas = rep(1/length(I), times = length(I)), K = 1)
 \arguments{
 \item{I}{is a vector of inputs}
 
-\item{Elas}{is a vector of elasticities, must be the same length as I.}
+\item{Elas}{is a vector of elasticities, must be the same length as I. Defaults to equal elasticities to all inputs.}
 
 \item{K}{is the constant of the model. Defaults to 1.}
 }

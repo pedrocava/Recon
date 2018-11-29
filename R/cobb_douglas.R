@@ -4,7 +4,7 @@
 #'
 #' cobb_douglas_2 computes what - mathematically - is a particular case of this function, but computationally there are differentes. Here, the user must input two vectors, one for elasticies and one for quantities, whereas in cobb_douglas_2, the user specifies only quantities and elasticities are taken as parameters.
 #' @param I is a vector of inputs
-#' @param Elas is a vector of elasticities, must be the same length as I.
+#' @param Elas is a vector of elasticities, must be the same length as I. Defaults to equal elasticities to all inputs.
 #' @param K is the constant of the model. Defaults to 1.
 #' @export
 

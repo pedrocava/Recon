@@ -9,6 +9,8 @@ cobb_douglas_2(x, TFP = 1, alpha = 0.5, beta = 1 - alpha)
 \arguments{
 \item{x}{is a data frame with two columns.}
 
+\item{TFP}{is the constant of the model. Defaults to 1.}
+
 \item{alpha}{is the first input's elasticity. Defaults to a random number between 0 and 1, rounded to two digits.}
 
 \item{beta}{is the second input's elasticity. Defaults to 1 - alpha.}

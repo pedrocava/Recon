@@ -11,6 +11,7 @@
 #' @param p_0 intercept of inverse demand function
 #' @param p_1 linear term of inverse demand function
 #' @param p_2 quadratic term of inverse demand function
+#' @import rootSolve
 #' @export
 
 cournot_2_numeric = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
@@ -31,9 +32,15 @@ cournot_2_numeric = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
   q_1 <- q_eq$root[1]
   q_2 <- q_eq$root[2]
   p <- p_0 + p_1*sum(q_1+q_2) + p_2*sum(q_1+q_2)^2
+  q <- q_1 + q_2
+  q_1sh <- q_1/q
+  q_2sh <- q_2/q
 
   results = list("price" = p,
                  "output_1" = q_1,
-                 "output_2" = q_2)
+                 "output_2" = q_2,
+                 "total_output" = q,
+                 "firm1_share" = q_1sh,
+                 "firm2_share" = q_2sh)
   print(results)
 }

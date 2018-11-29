@@ -15,6 +15,9 @@ cobb_douglas_2(x, TFP = 1, alpha = 0.5, beta = 1 - alpha)
 
 \item{beta}{is the second input's elasticity. Defaults to 1 - alpha.}
 }
+\value{
+Returns a list object with compued y and elasticities.
+}
 \description{
 This function allows you to compute a Cobb-Douglas production/ utility function with two inputs/goods.
 }

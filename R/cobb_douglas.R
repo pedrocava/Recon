@@ -6,26 +6,20 @@
 #' @param I is a vector of inputs
 #' @param Elas is a vector of elasticities, must be the same length as I.
 #' @param K is the constant of the model. Defaults to 1.
-#' @param log is logical. If TRUE, then output is in natural logarithm. Defaults to FALSE.
 #' @export
 
 
 cobb_douglas <- function(I,
-                         Elas,
-                         K = 1,
-                         log = FALSE) {
+                         Elas = rep(1/length(I), times = length(I)),
+                         K = 1) {
   Q = I * Elas
   S = prod(Q)
   y = K * S
 
-  switch(log == TRUE, cobb.douglas = list(y = log(y),
-                                          Degree = sum(Elas),
-                                          log = log),
+ CD <-  list(y = y,
+           Degree = sum(Elas),
+           log = log)
 
-         cobb.douglas = list(y = y,
-                             Degree = sum(Elas),
-                             log = log))
-
-  print(cobb.douglas)
+  print(CD)
 
 }

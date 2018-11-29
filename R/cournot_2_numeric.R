@@ -11,14 +11,15 @@
 #' @param p_0 intercept of inverse demand function
 #' @param p_1 linear term of inverse demand function
 #' @param p_2 quadratic term of inverse demand function
-#' @import rootSolve
+#' @importFrom rootSolve multiroot
+#' @import stats
 #' @export
 
 cournot_2_numeric = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
                      c2_0 = 0, c2_1 = 1, c2_2 = 0,
                      p_0 = 0, p_1 = -1, p_2 = 0) {
 
-  requireNamespace(rootSolve)
+  requireNamespace(rootSolve, quietly = TRUE)
 
   # Define the first order condition functions to search for a fixed point
   focs <- function(q) c(
@@ -27,7 +28,7 @@ cournot_2_numeric = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
     )
 
   # A good initial guess is to set Q = 0
-  q_eq <- multiroot(f = focs, start = c(0, 0))
+  q_eq <- rootSolve::multiroot(f = focs, start = c(0, 0))
 
   q_1 <- q_eq$root[1]
   q_2 <- q_eq$root[2]

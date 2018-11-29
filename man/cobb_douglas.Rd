@@ -4,7 +4,7 @@
 \alias{cobb_douglas}
 \title{Cobb-Douglas Model}
 \usage{
-cobb_douglas(I, Elas, K = 1, log = FALSE)
+cobb_douglas(I, Elas = rep(1/length(I), times = length(I)), K = 1)
 }
 \arguments{
 \item{I}{is a vector of inputs}
@@ -12,8 +12,6 @@ cobb_douglas(I, Elas, K = 1, log = FALSE)
 \item{Elas}{is a vector of elasticities, must be the same length as I.}
 
 \item{K}{is the constant of the model. Defaults to 1.}
-
-\item{log}{is logical. If TRUE, then output is in natural logarithm. Defaults to FALSE.}
 }
 \description{
 This function allows you to compute a Cobb-Douglas production/ utility function with n inputs/goods.

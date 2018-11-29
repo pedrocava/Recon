@@ -5,6 +5,7 @@
 #' @param alpha is the first input's elasticity. Defaults to a random number between 0 and 1, rounded to two digits.
 #' @param beta is the second input's elasticity. Defaults to 1 - alpha.
 #' @param TFP is the constant of the model. Defaults to 1.
+#' @return Returns a list object with compued y and elasticities.
 #' @export
 
 

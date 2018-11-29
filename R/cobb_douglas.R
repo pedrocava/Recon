@@ -18,13 +18,13 @@ cobb_douglas <- function(I,
   S = prod(Q)
   y = K * S
 
-  ifelse(log == TRUE,   cobb.douglas = list(y = log(y),
-                                            Degree = sum(Elas),
-                                            log = log),
+  switch(log == TRUE, cobb.douglas = list(y = log(y),
+                                          Degree = sum(Elas),
+                                          log = log),
 
          cobb.douglas = list(y = y,
                              Degree = sum(Elas),
-                             log = log) )
+                             log = log))
 
   print(cobb.douglas)
 

@@ -9,9 +9,7 @@
 
 cobb_douglas_2 <- function(x,
                            TFP = 1,
-                           alpha = round(runif(n=1,
-                                               min=0,
-                                               max=1), digits = 2),
+                           alpha = .5,
                            beta = 1 - alpha) {
   y = vector()
 

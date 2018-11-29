@@ -4,8 +4,7 @@
 \alias{cobb_douglas_2}
 \title{2 inputs Cobb-Douglas Model}
 \usage{
-cobb_douglas_2(x, TFP = 1, alpha = round(runif(n = 1, min = 0, max =
-  1), digits = 2), beta = 1 - alpha)
+cobb_douglas_2(x, TFP = 1, alpha = 0.5, beta = 1 - alpha)
 }
 \arguments{
 \item{x}{is a data frame with two columns.}

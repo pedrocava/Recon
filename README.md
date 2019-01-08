@@ -2,6 +2,16 @@
 
 This package aims to provide undergraduate students and teachers realiable ways of computing and exploring canonical models in economics. 
 
+# Installation
+
+You can install ``Recon`` by running:
+
+``` r
+install.packages("devtools")
+devtools::install_github("pcavalcanteoliveira/Recon")
+```
+
+# Usage
 So far, the package covers:
 
 * Steady state solution to the model presented in Solow (1956)

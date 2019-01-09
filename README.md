@@ -8,7 +8,7 @@ You can install ``Recon`` by running:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("pcavalcanteoliveira/Recon")
+devtools::install_github("pedrocava/Recon")
 ```
 
 # Usage

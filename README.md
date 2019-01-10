@@ -7,8 +7,8 @@ This package aims to provide undergraduate students and teachers realiable ways 
 You can install ``Recon`` by running:
 
 ``` r
-install.packages("devtools")
-devtools::install_github("pedrocava/Recon")
+install.packages('devtools')
+devtools::install_github('pedrocava/Recon')
 ```
 
 # Usage

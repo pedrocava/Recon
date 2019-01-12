@@ -4,7 +4,7 @@ This package aims to provide undergraduate students and teachers realiable ways 
 
 # Installation
 
-You can install ``Recon`` by running:
+You can install the latest version of ``Recon`` by running:
 
 ``` r
 install.packages('devtools')

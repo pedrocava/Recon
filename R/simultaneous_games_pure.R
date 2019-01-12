@@ -114,7 +114,7 @@ eqnash[sapply(eqnash, is.null)] <- NULL
 ## And here I'm printint the answer
 
 if (is.null(unlist(eqnash))){
-    print("There's no pure strategies equilibrium", quote = F)
+    print("There's no pure strategies Nash Equilibrium", quote = F)
 } else {
     print(eqnash)
   }

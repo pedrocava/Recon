@@ -23,5 +23,5 @@ cobb_douglas_2 <- function(x,
   cobb.douglas = list(y = y,
                       alpha = alpha,
                       beta = beta)
-  print(cobb.douglas)
+  return(cobb.douglas)
 }

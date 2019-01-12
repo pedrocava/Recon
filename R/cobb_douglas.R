@@ -10,16 +10,17 @@
 
 
 cobb_douglas <- function(I,
-                         Elas = rep(1/length(I), times = length(I)),
+                         Elas = rep(1/length(I),
+                         times = length(I)),
                          K = 1) {
   Q = I * Elas
   S = prod(Q)
   y = K * S
 
  CD <-  list(y = y,
-           Degree = sum(Elas),
-           log = log)
+            Degree = sum(Elas),
+            log = log)
 
-  print(CD)
+  return(CD)
 
 }

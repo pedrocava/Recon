@@ -26,9 +26,9 @@ MRW_steady_state <- function(n = .01,
 
   y = (k^alpha) * (h^beta)
 
-  results = list(h = "Human Capital per capita",
-                 k = "Capital per capita",
-                 y = "Income per capita")
-  print(results)
+  results = list(human_capital = h,
+                 capital = k,
+                 income = y)
+  return(results)
 }
 

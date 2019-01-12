@@ -6,14 +6,16 @@
 #' @param c is the "by" parameter, the grid's density. Defaults to .5.
 #' @export
 
-grid.2 <- function(a=0, b=100, c = .5) {
+grid.2 <- function(a = 0,
+                   b = 100,
+                   c = .5) {
 
 x = vector()
 y = vector()
 
 x = seq(from = a,
-          to = b,
-            by = c)
+        to = b,
+        by = c)
 
 x = sort(rep(x,length(x)),
          decreasing = FALSE)

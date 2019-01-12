@@ -17,8 +17,8 @@ solow_steady_state <- function(n = .01,
   k = (s/(n + g + delta))^(1 / (1-alpha))
   y = (s/(n + g + delta))^(alpha / (1-alpha))
 
-results = list(k = "Capital per capita",
-               y = "Income per capita")
+results = list(capital = k,
+               income = y)
 
-print(results)
+return(results)
   }

@@ -25,7 +25,7 @@ stackelberg_solver(cl_0 = 0, cl_1 = 1, cf_0 = 0, cf_1 = 1,
 \item{f0}{Initial guess for follower's output. Defaults to 0. Strongly advise not to set this parameter unless you are very aware of what you're doing.}
 }
 \description{
-This function numerically finds the equilibrium in a Stackelberg duopoly model with linear functions. For guaranteed existence of equilibrium, the parameters should be non-negative.
-The general functional form for a function of argument x is f(x) = p_0 + p_1 x + p_2 x^2. Parameters p refer to the inverse demand function.
+This function numerically finds the equilibrium in a Stackelberg duopoly model with linear functions. For guaranteed existence of equilibrium, cost parameters should be non-negative.
+The general functional form for a function of argument x is f(x) = p_0 + p_1 x. Parameters p refer to the inverse demand function.
 The firm indexed by "l" is the leader, and the one indexed by "f" is the follower.
 }

@@ -19,9 +19,6 @@ stackelberg_solver = function(cl_0 = 0, cl_1 = 1,
                    p_0 = 0, p_1 = -1,
                    l0 = 0, f0 = 0) {
 
-  requireNamespace(rootSolve)
-  rootSolve = rootSolve
-
   # Define the first order condition functions to search for a fixed point
   focs <- function(q) c(
 

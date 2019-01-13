@@ -1,6 +1,6 @@
 #' Cournot Duopoly with numeric solution
 #'
-#' This function numerically finds the equilibrium in a Cournot duopoly model with quadratic functions. For guaranteed existence of equilibrium, the parameters should be non-negative.
+#' This function numerically finds the equilibrium in a Cournot duopoly model with quadratic functions. For guaranteed existence of equilibrium, cost parameters should be non-negative.
 #' The general functional form for a function of argument x is f(x) = p_0 + p_1 x + p_2 x^2. Parameters c1 and c2 refer to firms 1 and 2. Parameters p refer to the inverse demand function.
 #' @param c1_0 intercept of firm 1's cost function
 #' @param c1_1 linear term's parameter of firm 1's cost function

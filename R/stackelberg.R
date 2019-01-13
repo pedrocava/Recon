@@ -1,7 +1,7 @@
 #' Stackelberg Duopoly with numeric solution
 #'
-#' This function numerically finds the equilibrium in a Stackelberg duopoly model with linear functions. For guaranteed existence of equilibrium, the parameters should be non-negative.
-#' The general functional form for a function of argument x is f(x) = p_0 + p_1 x + p_2 x^2. Parameters p refer to the inverse demand function.
+#' This function numerically finds the equilibrium in a Stackelberg duopoly model with linear functions. For guaranteed existence of equilibrium, cost parameters should be non-negative.
+#' The general functional form for a function of argument x is f(x) = p_0 + p_1 x. Parameters p refer to the inverse demand function.
 #' The firm indexed by "l" is the leader, and the one indexed by "f" is the follower.
 #' @param cl_0 intercept of leader's cost function
 #' @param cl_1 linear term's parameter of leader's cost function

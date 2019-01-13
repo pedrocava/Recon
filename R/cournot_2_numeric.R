@@ -14,7 +14,7 @@
 #' @import rootSolve
 #' @export
 
-cournot_nonlinear_solver = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
+cournot_solver = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
                      c2_0 = 0, c2_1 = 1, c2_2 = 0,
                      p_0 = 0, p_1 = -1, p_2 = 0) {
 

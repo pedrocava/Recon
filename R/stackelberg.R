@@ -12,7 +12,6 @@
 #' @param l0 Initial guess for leader's output. Defaults to 0. Strongly advise not to set this parameter unless you are very aware of what you're doing.
 #' @param f0 Initial guess for follower's output. Defaults to 0. Strongly advise not to set this parameter unless you are very aware of what you're doing.
 #' @import rootSolve
-#' @import Deriv
 #' @export
 
 stackelberg_linear_solver = function(cl_0 = 0, cl_1 = 1,

@@ -26,7 +26,7 @@ stackelberg_linear_solver = function(cl_0 = 0, cl_1 = 1,
   focs <- function(q) c(
 
     foc_l <- ( p_0/2 + cf_1/2 - cl_1 - p_1*q[1] ),
-    foc_f <- ( p_0 + p_1*q[1] - cf_1 -2*p_1*q[2])
+    foc_f <- ( p_0 + p_1*q[1] - cf_1 -2*p_1*q[2] )
   )
 
   q_eq <- rootSolve::multiroot(f = focs, start = c(l0, f0))

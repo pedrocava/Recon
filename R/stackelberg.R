@@ -19,6 +19,9 @@ stackelberg_solver = function(cl_0 = 0, cl_1 = 1,
                    p_0 = 0, p_1 = -1,
                    l0 = 0, f0 = 0) {
 
+  if (p_1 > 0)
+    warning("p_1 > 0 makes the demand curve upwards sloping")
+
   # Define the first order condition functions to search for a fixed point
   focs <- function(q) c(
 

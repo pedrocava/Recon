@@ -34,8 +34,10 @@ stackelberg_solver = function(cl_0 = 0, cl_1 = 1,
   q_f <- q_eq$root[2]
   p <- p_0 + p_1*sum(q_l + q_f)
   q <- q_l + q_f
-  q_lsh <- q_l/q
-  q_fsh <- q_f/q
+  q_lsh <- round(q_l/q,
+                 digits = 2)
+  q_fsh <- round(q_f/q,
+                 digits = 2)
 
   results <-  list(price = p,
                    leader_output = q_l,

@@ -33,8 +33,8 @@ cournot_solver = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
   q_2 <- q_eq$root[2]
   p <- p_0 + p_1*sum(q_1+q_2) + p_2*sum(q_1+q_2)^2
   q <- q_1 + q_2
-  q_1sh <- q_1/q
-  q_2sh <- q_2/q
+  q_1sh <- round(q_1/q, digits = 2)
+  q_2sh <- round(q_2/q, digits = 2)
 
   results <-  list(price = p,
                    output_1 = q_1,

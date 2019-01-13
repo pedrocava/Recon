@@ -6,7 +6,7 @@
 #' @param c is the "by" parameter, the grid's density. Defaults to .5.
 #' @export
 
-grid.2 <- function(a = 0,
+grid2 <- function(a = 0,
                    b = 100,
                    c = .5) {
 

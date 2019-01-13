@@ -18,3 +18,5 @@ LazyData: true
 RoxygenNote: 6.1.1
 Imports: rootSolve,
           stats
+Suggests: knitr, rmarkdown, plot3D, dplyr
+VignetteBuilder: knitr

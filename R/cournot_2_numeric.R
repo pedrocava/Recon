@@ -18,8 +18,10 @@ cournot_solver = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
                      c2_0 = 0, c2_1 = 1, c2_2 = 0,
                      p_0 = 0, p_1 = -1, p_2 = 0) {
 
+  options(warn=1)
+
   if (p_1 > 0)
-    message("p_1 > 0 makes the demand curve upwards sloping")
+    warning("p_1 > 0 makes the demand curve upwards sloping")
 
   # Define the first order condition functions to search for a fixed point
   focs <- function(q) c(

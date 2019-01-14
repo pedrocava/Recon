@@ -5,7 +5,7 @@
 \title{Monopoly Profit Maximization}
 \usage{
 monopoly_solver(c0 = 0, c1 = 1, c2 = 0, p0 = 0, p1 = -1,
-  p2 = 0)
+  p2 = 0, q0 = 0)
 }
 \arguments{
 \item{c0}{intercept of monopolist's cost function. Defaults to 0.}

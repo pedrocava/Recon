@@ -18,28 +18,30 @@ monopoly_solver = function(c0 = 0,
                            c2 = 0,
                            p0 = 0,
                            p1 = -1,
-                           p2 = 0) {
+                           p2 = 0,
+                           q0 = 0) {
 
   if (p1 > 0)
     warning("A positive p1 makes the demand curve upwards sloping. Consider setting it as a negative number.")
 
-
+  # define First Order Condition (FOC) to search for a fixed point
   foc = function(q) c(p0 + 2*p1*q - c1 - 2*c2*q + 3*p2*(q^2))
 
+  # find root of FOC, that's the system's fixed point
   q_eq = rootSolve::multiroot(f = foc,
-                              start = q0)
+                              start = q0)$root
 
-  price = p0 + p1*q_eq + p2*(q_eq^2)
+  price = p0 + p1 * q_eq + p2*(q_eq^2)
   marginalcost = c1 + 2*p2*q_eq
   markup = price/marginalcost
   abs_elasticity = 1 - (price/marginalcost)
 
   totalcost = c0 + c1*e_eq + c2*(q_eq^2)
-  profit = price*e_eq - totalcost
+  profit = price*q_eq - totalcost
   profit_rate = profit/totalcost
 
   results = list(price = price,
-                 output = e_eq,
+                 output = q_eq,
                  totalcost = totalcost,
                  profit = profit,
                  profit_rate = profit_rate,
@@ -48,4 +50,4 @@ monopoly_solver = function(c0 = 0,
                  abs_elasticity = abs_elasticity)
 
   return(results)
-  }
+}

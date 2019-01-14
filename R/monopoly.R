@@ -21,7 +21,7 @@ monopoly_solver = function(c0 = 0,
                            p2 = 0) {
 
   if (p1 > 0)
-    warning("A positive p_1 makes the demand curve upwards sloping. Consider setting it as a negative number.")
+    warning("A positive p1 makes the demand curve upwards sloping. Consider setting it as a negative number.")
 
 
   foc = function(q) c(p0 + 2*p1*q - c1 - 2*c2*q + 3*p2*(q^2))

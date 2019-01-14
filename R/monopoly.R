@@ -1,6 +1,6 @@
 #' Monopoly Profit Maximization
 #'
-#' This function numerically finds the profit-maximizing output for a monopolist wih linear and non-linear cost and demand curves. For guaranteed existence of feasible solution (in which both price and output are positive), a linear demand curve might be necessary.
+#' This function numerically finds the profit-maximizing output for a monopolist with linear and non-linear cost and demand curves. For guaranteed existence of feasible solution (in which both price and output are positive), a linear demand curve might be necessary.
 #' @param c0 intercept of monopolist's cost function. Defaults to 0.
 #' @param c1 linear term's parameter of monopolist's cost function. Defaults to 1.
 #' @param c2 quadratic terms's parameter of the monopolist's cost function. Defaults to 0.

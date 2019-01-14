@@ -20,7 +20,7 @@ monopoly_solver = function(c0 = 0,
                            p1 = -1,
                            p2 = 0) {
 
-  if (p_1 > 0)
+  if (p1 > 0)
     warning("A positive p_1 makes the demand curve upwards sloping. Consider setting it as a negative number.")
 
 

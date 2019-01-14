@@ -10,7 +10,7 @@
 #' @param q0 Initial guess for monopolist's output. Defaults to 0. Strongly advise not to set this parameter unless you are very aware of what you're doing.
 #' @import rootSolve
 #' @export
-#'
+
 
 
 monopoly_solver = function(c0 = 0,

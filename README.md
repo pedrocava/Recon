@@ -23,9 +23,10 @@ So far, the package covers:
 * Finds the Mixed Strategies Nash Equilibrium of a 2 person simultaneous game, for 2x2 pay-off matrices
 * Equilibrium in a Cournot Duopoly Model, with linear and non-linear cost and demand curves
 * Solution to a Stackelberg Duopoly Model
+* Solution to Monopoly Profit Maximization
+
 
 Things that are currently under work:
 
 * Solution to a Bertrand Duopoly Model with differentiated goods
-* Solution to Monopoly Profit Maximization
-
+* Solution to a Cournot Oligpoly with n firms and homogenous cost functions

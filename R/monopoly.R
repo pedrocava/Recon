@@ -34,7 +34,6 @@ monopoly_solver = function(c0 = 0,
   price = p0 + p1 * q_eq + p2*(q_eq^2)
   marginalcost = c1 + 2*p2*q_eq
   markup = price/marginalcost
-  abs_elasticity = 1 - (price/marginalcost)
 
   totalcost = c0 + c1*e_eq + c2*(q_eq^2)
   profit = price*q_eq - totalcost
@@ -46,8 +45,7 @@ monopoly_solver = function(c0 = 0,
                  profit = profit,
                  profit_rate = profit_rate,
                  marginalcost = marginalcost,
-                 markup = markup,
-                 abs_elasticity = abs_elasticity)
+                 markup = markup)
 
   return(results)
 }

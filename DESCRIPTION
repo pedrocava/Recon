@@ -1,7 +1,7 @@
 Package: Recon
 Title: Economics with R
 Version: 0.1.0.9000
-Authors@R: c(person("Pedro", "Cavalcante Oliveira", 
+Authors@R: c(person(given = "Pedro", family = "Cavalcante Oliveira", 
               email = "pedrocolrj@gmail.com", 
               role = c("aut", "cre")),
               person(given = "Diego", family = "S. Cardoso",

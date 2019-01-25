@@ -21,9 +21,9 @@ So far, the package covers:
 * Grid generating function, so one can map results easily
 * Finds the Pure Strategies Nash Equilibrium of a 2 person simultaneous game 
 * Finds the Mixed Strategies Nash Equilibrium of a 2 person simultaneous game, for 2x2 pay-off matrices
-* Equilibrium in a Cournot Duopoly Model, with linear and non-linear cost and demand curves
-* Solution to a Stackelberg Duopoly Model
-* Solution to Monopoly Profit Maximization
+* Solution to a Cournot Duopoly Model, with linear and non-linear cost and demand curves
+* Solution to a Stackelberg Duopoly Model, with non-linear cost curves
+* Solution to Monopoly Profit Maximization 
 
 
 Things that are currently under work:

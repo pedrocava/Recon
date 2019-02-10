@@ -63,8 +63,11 @@ colbr <- list()
 # we would have an unlisted vector named 31 and 32 on the elements (2, 2). I wanted to
 # have the names just as the column 3 to have the output as (2, 2) and the names (3, 3))
 
-rowunlisted <- stats::setNames(unlist(listrow, use.names=F),rep(names(listrow), lengths(listrow)))
-colunlisted <- stats::setNames(unlist(listcol, use.names=F),rep(names(listcol), lengths(listcol)))
+rowunlisted <- stats::setNames(unlist(listrow, use.names=F), 
+                               rep(names(listrow), lengths(listrow)))
+  
+colunlisted <- stats::setNames(unlist(listcol, use.names=F), 
+                               rep(names(listcol), lengths(listcol)))
 
 x <- 1
 
@@ -93,7 +96,7 @@ eqnash <- list()
 i <- 1
 j <- 1
 
-# Now I compare each one of the pairs of best responses, and
+# Now I compare each one of the pairs of best responses
 # if they are equal, we have a Nash equilibrium (by definition)
 
 while (i <= length(rowbr)){
@@ -111,11 +114,10 @@ while (i <= length(rowbr)){
 
 eqnash[sapply(eqnash, is.null)] <- NULL
 
-## And here I'm printint the answer
-
+###
 if (is.null(unlist(eqnash))){
     print("There's no pure strategies Nash Equilibrium", quote = F)
 } else {
-    print(eqnash)
+    return(eqnash)
   }
 }

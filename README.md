@@ -11,6 +11,38 @@ install.packages('devtools')
 devtools::install_github('pedrocava/Recon')
 ```
 
+Which should return something similar to:
+
+``` r
+Installing package into ‘C:/Users/Pedro/Documents/R/win-library/3.5’
+(as ‘lib’ is unspecified)
+* installing *source* package 'Recon' ...
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package 'Recon'
+    finding HTML links ... done
+    MRW_steady_state                        html  
+    cobb_douglas                            html  
+    cobb_douglas_2                          html  
+    cournot_solver                          html  
+    grid2                                   html  
+    monopoly_solver                         html  
+    sgms                                    html  
+    sgps                                    html  
+    solow_steady_state                      html  
+    stackelberg_solver                      html  
+** building package indices
+** testing if installed package can be loaded
+*** arch - i386
+*** arch - x64
+* DONE (Recon)
+In R CMD INSTALL
+```
+
+Please note that you should have [Rtools](http://cran.r-project.org/bin/windows/Rtools/) installed. 
+
 # Usage
 So far, the package covers:
 

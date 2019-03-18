@@ -24,7 +24,7 @@ cobb_douglas_2 <- function(x,
                  alpha = alpha,
                  beta = beta)
 
-  return(cobb.douglas)
+  return(results)
 }
 
 

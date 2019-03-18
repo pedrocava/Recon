@@ -84,7 +84,7 @@ monopoly_solver = function(c0 = 0,
   marginalcost = c1 + 2*p2*q_eq
   markup = price/marginalcost
 
-  totalcost = c0 + c1*e_eq + c2*(q_eq^2)
+  totalcost = c0 + c1*q_eq + c2*(q_eq^2)
   profit = price*q_eq - totalcost
   profit_rate = profit/totalcost
 

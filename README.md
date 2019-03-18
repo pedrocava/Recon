@@ -1,6 +1,6 @@
 # Recon - Economics with R
 
-This package aims to provide undergraduate students and professors realiable ways of computing and exploring canonical models in economics. 
+This package aims to provide undergraduate students and professors realiable ways of computing and exploring canonical models in economics. It creates a rich enviroment for comparative statics, visualization of results and better understanding of model outcomes.
 
 # Installation
 
@@ -58,7 +58,8 @@ So far, the package covers:
 * Solution to Monopoly Profit Maximization 
 
 
-Things that are currently under work:
+Features that are currently under work:
 
 * Solution to a Bertrand Duopoly Model with differentiated goods
 * Solution to a Cournot Oligpoly with n firms and homogenous cost functions
+

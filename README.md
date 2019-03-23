@@ -58,8 +58,22 @@ So far, the package covers:
 * Solution to Monopoly Profit Maximization 
 
 
-Features that are currently under work:
+# Upcoming Features and Suggestions
+
+Feel free to ask/suggest a model for implementation. If you want to implement one youself, fork this repo and then do a pull request with your new functions. After reviewing, you'll be credited and your functions will be part of ``Recon``. Features that are currently under work:
 
 * Solution to a Bertrand Duopoly Model with differentiated goods
 * Solution to a Cournot Oligpoly with n firms and homogenous cost functions
+
+# Documentation and Examples
+
+``Recon`` is a work in progress. Right now documentation is satisfactory, but there's little to no examples available in it. This is required by CRAN for approval and we are commited to provide examples to all functions. Exemple coverage by group:
+
+| Group                          | Example Coverage |
+|--------------------------------|------------------|
+| Imperfect Competition          |Uncovered         |
+| Growth Models and Steady State |Uncovered         | 
+| Cobb-Douglas Functions         |Uncovered         | 
+| Nash Equilibrium               |Uncovered         | 
+| Misc.                          |Uncovered         |  
 

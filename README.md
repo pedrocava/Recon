@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/pedrocava/Recon.svg?branch=master)](https://travis-ci.org/pedrocava/Recon)
-[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
+[![GitHub release](https://img.shields.io/github/release/pedrocava/Recon.js.svg)](https://GitHub.com/pedrocava/Recon/releases/)
 
 
 

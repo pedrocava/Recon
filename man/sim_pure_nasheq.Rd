@@ -2,7 +2,7 @@
 % Please edit documentation in R/Nash_Equilibrium.R
 \name{sim_pure_nasheq}
 \alias{sim_pure_nasheq}
-\title{Simultaneous Games Pure Strategies}
+\title{Simultaneous Games Pure Strategies Nash Equilibria}
 \usage{
 sim_pure_nasheq(a, b)
 }
@@ -11,6 +11,19 @@ sim_pure_nasheq(a, b)
 
 \item{b}{is the column player's payoff matrix.}
 }
+\value{
+List with all Nash Equilibria
+}
 \description{
 This function finds the Nash equilibrium in pure strategies of a 2-person simultaneous game.
+}
+\examples{
+
+a = matrix(c(-8, -10, 0, -1), nrow = 2)
+b = matrix(c(-8, 0, -10, -1), nrow = 2)
+sim_pure_nasheq(a, b)
+
+}
+\author{
+Marcelo Gelati, National Institute of Pure and Applied Mathematics (IMPA) \email{marcelogelati@gmail.com}
 }

@@ -1,6 +1,8 @@
 #' Mankiw-Romer-Weil Growth Model Steady State
 #'
 #' This function computes steady state income, capital and human capital per worker given relevant parameters according to the modelo presented in Mankiw, Romer and Weil (1992).
+#'
+#'
 #' @param sk is the savings rate devoted to physical capital. Defaults to .01.
 #' @param sh is the savings rate devoted to human capital. Defaults to 0.1.
 #' @param delta is the physical capital stock's depreciation rate. Defaults to .01.
@@ -9,6 +11,16 @@
 #' @param alpha is capital-output elasticity. Defaults to .33 as estimated by Mankiw, Romer and Weil.
 #' @param beta is the human capital-output elasciticy. Defatults to .33 as estimated by Mankiw, Romer and Weil.
 #' @param g is the technological growth rate. Defaults to .01.
+#'
+#' @author Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
+#'
+#' @return List with steady state capital, human capital and income per capita
+#'
+#' @examples
+#'
+#' MRW_steady_state(gamma = .005)
+#'
+#'
 #' @export
 
 
@@ -40,6 +52,16 @@ MRW_steady_state <- function(n = .01,
 #' @param n is population growth rate. Defaults to .01.
 #' @param alpha is capital-output elasticity. Defaults to .5.
 #' @param g is the technological growth rate. Defaults to .01.
+#'
+#' @author Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
+#'
+#' @return List with steady state capital and income per capita
+#'
+#' @examples
+#'
+#' solow_steady_state()
+#'
+#'
 #' @export
 
 solow_steady_state <- function(n = .01,

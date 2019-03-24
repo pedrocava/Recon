@@ -13,9 +13,22 @@ cobb_douglas(I, Elas = rep(1/length(I), times = length(I)), K = 1)
 
 \item{K}{is the constant of the model. Defaults to 1.}
 }
+\value{
+A list with output, function's degree of homogeneity.
+}
 \description{
 This function allows you to compute a Cobb-Douglas production/ utility function with n inputs/goods.
 }
 \details{
 cobb_douglas_2 computes what - mathematically - is a particular case of this function, but computationally there are differentes. Here, the user must input two vectors, one for elasticies and one for quantities, whereas in cobb_douglas_2, the user specifies only quantities and elasticities are taken as parameters.
+}
+\examples{
+
+I <- c(3, 4, 5)
+
+cobb_douglas(I)
+
+}
+\author{
+Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
 }

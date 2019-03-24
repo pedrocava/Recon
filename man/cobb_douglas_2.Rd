@@ -21,3 +21,17 @@ Returns a list object with compued y and elasticities.
 \description{
 This function allows you to compute a Cobb-Douglas production/ utility function with two inputs/goods.
 }
+\examples{
+
+x <- c(3, 4, 5)
+y <- c(1, 4, 2)
+
+data <- data.frame(x = x, y = y)
+
+cobb_douglas_2(data)
+
+
+}
+\author{
+Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
+}

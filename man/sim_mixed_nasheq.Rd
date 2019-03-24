@@ -11,6 +11,19 @@ sim_mixed_nasheq(a, b)
 
 \item{b}{is the column player's payoff matrix.}
 }
+\value{
+List with all Nash Equilibria
+}
 \description{
 This function finds the Nash equilibrium in mixed strategies of a 2-person simultaneous game. The function works only for 2x2 matrices,
+}
+\examples{
+
+a = matrix(c(-8, -10, 0, -1), nrow = 2)
+b = matrix(c(-8, 0, -10, -1), nrow = 2)
+sim_mixed_nasheq(a, b)
+
+}
+\author{
+Marcelo Gelati, National Institute of Pure and Applied Mathematics (IMPA) \email{marcelogelati@gmail.com}
 }

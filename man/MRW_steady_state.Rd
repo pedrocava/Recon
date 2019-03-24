@@ -24,6 +24,18 @@ MRW_steady_state(n = 0.01, g = 0.01, alpha = 0.33, beta = 0.33,
 
 \item{gamma}{is the human capital stock's depreciation rate. Defaults to 0.}
 }
+\value{
+List with steady state capital, human capital and income per capita
+}
 \description{
 This function computes steady state income, capital and human capital per worker given relevant parameters according to the modelo presented in Mankiw, Romer and Weil (1992).
+}
+\examples{
+
+MRW_steady_state(gamma = .005)
+
+
+}
+\author{
+Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
 }

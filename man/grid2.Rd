@@ -13,6 +13,14 @@ grid2(a = 0, b = 100, c = 0.5)
 
 \item{c}{is the "by" parameter, the grid's density. Defaults to .5.}
 }
+\value{
+Data Frame with a grid
+}
 \description{
 This function creates a grid (more especifically, a 2-cell) of coordinates in R^2. Useful for plotting and generating data points with which to apply some functions.
+}
+\examples{
+
+grid2(a = 0, b = 10, c = .1)
+
 }

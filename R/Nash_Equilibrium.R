@@ -1,15 +1,25 @@
-#' Simultaneous Games Pure Strategies
+#' Simultaneous Games Pure Strategies Nash Equilibria
 #'
 #' This function finds the Nash equilibrium in pure strategies of a 2-person simultaneous game.
 #' @param a is the row player's payoff matrix.
 #' @param b is the column player's payoff matrix.
+#'
+#' @return List with all Nash Equilibria
+#'
+#' @author Marcelo Gelati, National Institute of Pure and Applied Mathematics (IMPA) \email{marcelogelati@@gmail.com}
+#'
+#' @examples
+#'
+#' a = matrix(c(-8, -10, 0, -1), nrow = 2)
+#' b = matrix(c(-8, 0, -10, -1), nrow = 2)
+#' sim_pure_nasheq(a, b)
+#'
 #' @import stats
+#'
 #' @export
 
 sim_pure_nasheq <- function(a, b){
 
-  requireNamespace(stats)
-  stats = stats
 
   # Here I'm creating the container for the best responses
 
@@ -125,8 +135,21 @@ sim_pure_nasheq <- function(a, b){
 #' Simultaneous Games Mixed Strategies
 #'
 #' This function finds the Nash equilibrium in mixed strategies of a 2-person simultaneous game. The function works only for 2x2 matrices,
+#'
 #' @param a is the row player's payoff matrix.
 #' @param b is the column player's payoff matrix.
+#'
+#' @return List with all Nash Equilibria
+#'
+#' @author
+#' Marcelo Gelati, National Institute of Pure and Applied Mathematics (IMPA) \email{marcelogelati@@gmail.com}
+#'
+#' @examples
+#'
+#' a = matrix(c(-8, -10, 0, -1), nrow = 2)
+#' b = matrix(c(-8, 0, -10, -1), nrow = 2)
+#' sim_mixed_nasheq(a, b)
+#'
 #' @export
 
 sim_mixed_nasheq <- function(a, b) {

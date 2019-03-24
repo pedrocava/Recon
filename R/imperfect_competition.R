@@ -1,7 +1,7 @@
 #' Cournot Duopoly with numeric solution
 #'
 #' This function numerically finds the equilibrium in a Cournot duopoly model with quadratic functions. For guaranteed existence of equilibrium, cost parameters should be non-negative.
-#' The general functional form for a function of argument x is f(x) = p_0 + p_1 x + p_2 x^2. Parameters c1 and c2 refer to firms 1 and 2. Parameters p refer to the inverse demand function.
+#' The general functional form for a function of argument x is \eqn{f(x) = p_0 + p_1 x + p_2 x^2}. Parameters c1 and c2 refer to firms 1 and 2. Parameters p refer to the inverse demand function.
 #'
 #'
 #' @param c1_0 intercept of firm 1's cost function
@@ -10,9 +10,9 @@
 #' @param c2_0 intercept of firm 2's cost function
 #' @param c2_1 linear term's parameter of firm 2's cost function
 #' @param c2_2 quadratic term's parameter of firm 2's cost function
-#' @param p_0 intercept of inverse demand function
-#' @param p_1 linear term's parameter of inverse demand function
-#' @param p_2 quadratic term's parameter of inverse demand function
+#' @param p0 intercept of inverse demand function
+#' @param p1 linear term's parameter of inverse demand function
+#' @param p2 quadratic term's parameter of inverse demand function
 #'
 #'
 #' @return List with market price, firm output, profits and market share
@@ -21,7 +21,7 @@
 #'
 #' @examples
 #'
-#' cournot_solver(p_0 = 20)
+#' cournot_solver(p0 = 20)
 #'
 #' @author Diego S. Cardoso, Dyson School of Applied Economics & Management, Cornell University \email{mail@@diegoscardoso.com}
 #'
@@ -131,15 +131,15 @@ monopoly_solver = function(c0 = 0,
 #' Stackelberg Duopoly with numeric solution
 #'
 #' This function numerically finds the equilibrium in a Stackelberg duopoly model with linear functions. For guaranteed existence of equilibrium, cost parameters should be non-negative.
-#' The general functional form for a function of argument x is f(x) = p_0 + p_1 x. Parameters p refer to the inverse demand function.
+#' The general functional form for a function of argument x is \eqn{f(x) = p_0 + p_1 x}. Parameters p refer to the inverse demand function.
 #' The firm indexed by "l" is the leader, and the one indexed by "f" is the follower.
 #'
 #' @param cl_0 intercept of leader's cost function
 #' @param cl_1 linear term's parameter of leader's cost function
 #' @param cf_0 intercept of follower's cost function
 #' @param cf_1 linear term's parameter of follower's cost function
-#' @param p_0 intercept of inverse demand function. Defaults to 0.
-#' @param p_1 linear term's parameter of inverse demand function. Defaults to -1. Note that it is important to specify it as a negative number, or the demand curve will be upward sloping.
+#' @param p0 intercept of inverse demand function. Defaults to 0.
+#' @param p1 linear term's parameter of inverse demand function. Defaults to -1. Note that it is important to specify it as a negative number, or the demand curve will be upward sloping.
 #' @param l0 Initial guess for leader's output. Defaults to 0. Strongly advised not to set this parameter unless you are very aware of what you're doing.
 #' @param f0 Initial guess for follower's output. Defaults to 0. Strongly advised not to set this parameter unless you are very aware of what you're doing.
 #'

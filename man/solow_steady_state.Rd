@@ -18,6 +18,18 @@ solow_steady_state(n = 0.01, g = 0.01, alpha = 0.5, s = 0.01,
 
 \item{delta}{is the capital stock's depreciation rate. Defaults to .01.}
 }
+\value{
+List with steady state capital and income per capita
+}
 \description{
 This function computes steady state income and capital per worker given relevant parameters according to the canonical model proposed by Solow (1956).
+}
+\examples{
+
+solow_steady_state()
+
+
+}
+\author{
+Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
 }

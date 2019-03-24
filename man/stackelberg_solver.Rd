@@ -16,20 +16,20 @@ stackelberg_solver(cl_0 = 0, cl_1 = 1, cf_0 = 0, cf_1 = 1,
 
 \item{cf_1}{linear term's parameter of follower's cost function}
 
+\item{p0}{intercept of inverse demand function. Defaults to 0.}
+
+\item{p1}{linear term's parameter of inverse demand function. Defaults to -1. Note that it is important to specify it as a negative number, or the demand curve will be upward sloping.}
+
 \item{l0}{Initial guess for leader's output. Defaults to 0. Strongly advised not to set this parameter unless you are very aware of what you're doing.}
 
 \item{f0}{Initial guess for follower's output. Defaults to 0. Strongly advised not to set this parameter unless you are very aware of what you're doing.}
-
-\item{p_0}{intercept of inverse demand function. Defaults to 0.}
-
-\item{p_1}{linear term's parameter of inverse demand function. Defaults to -1. Note that it is important to specify it as a negative number, or the demand curve will be upward sloping.}
 }
 \value{
 A list with market price, firm output, profits and market share
 }
 \description{
 This function numerically finds the equilibrium in a Stackelberg duopoly model with linear functions. For guaranteed existence of equilibrium, cost parameters should be non-negative.
-The general functional form for a function of argument x is f(x) = p_0 + p_1 x. Parameters p refer to the inverse demand function.
+The general functional form for a function of argument x is \eqn{f(x) = p_0 + p_1 x}. Parameters p refer to the inverse demand function.
 The firm indexed by "l" is the leader, and the one indexed by "f" is the follower.
 }
 \examples{

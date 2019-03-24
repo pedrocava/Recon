@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/pedrocava/Recon.svg?branch=master)](https://travis-ci.org/pedrocava/Recon)
+
+
 # Recon - Economics with R
 
 This package aims to provide undergraduate students and professors realiable ways of computing and exploring canonical models in economics. It creates a rich enviroment for comparative statics, visualization of results and better understanding of model outcomes.
@@ -29,8 +32,8 @@ Installing package into ‘C:/Users/Pedro/Documents/R/win-library/3.5’
     cournot_solver                          html  
     grid2                                   html  
     monopoly_solver                         html  
-    sgms                                    html  
-    sgps                                    html  
+    sim_mixed_nasheq                        html  
+    sim_pure_nasheq                         html  
     solow_steady_state                      html  
     stackelberg_solver                      html  
 ** building package indices
@@ -43,7 +46,13 @@ In R CMD INSTALL
 
 Please note that you should have [Rtools](http://cran.r-project.org/bin/windows/Rtools/) installed. 
 
-# Features by theme:
+# Features by theme
+
+To get a general view of what's implemented in ``Recon`` directly from R you can run:
+
+``` r
+help(package = Recon)
+```
 
 ## Economic Growth
 

@@ -1,7 +1,5 @@
 [![Build Status](https://travis-ci.org/pedrocava/Recon.svg?branch=master)](https://travis-ci.org/pedrocava/Recon)
-[![GitHub release](https://img.shields.io/github/release/pedrocava/Recon.js.svg)](https://GitHub.com/pedrocava/Recon/releases/)
-
-
+![Coveralls github](https://img.shields.io/coveralls/github/pedrocava/recon.svg?style=for-the-badge)
 
 # Recon - Economics with R
 

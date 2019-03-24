@@ -86,5 +86,5 @@ Feel free to ask/suggest a model for implementation. If you want to implement on
 | Growth Models and Steady State |Covered           | 
 | Cobb-Douglas Functions         |Covered           | 
 | Nash Equilibrium               |Covered           | 
-| Misc.                          |Uncovered         |  
+| Misc.                          |Covered           |  
 

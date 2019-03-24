@@ -5,7 +5,7 @@
 \title{Cournot Duopoly with numeric solution}
 \usage{
 cournot_solver(c1_0 = 0, c1_1 = 1, c1_2 = 0, c2_0 = 0, c2_1 = 1,
-  c2_2 = 0, p_0 = 0, p_1 = -1, p_2 = 0)
+  c2_2 = 0, p0 = 0, p1 = -1, p2 = 0)
 }
 \arguments{
 \item{c1_0}{intercept of firm 1's cost function}
@@ -26,7 +26,18 @@ cournot_solver(c1_0 = 0, c1_1 = 1, c1_2 = 0, c2_0 = 0, c2_1 = 1,
 
 \item{p_2}{quadratic term's parameter of inverse demand function}
 }
+\value{
+List with market price, firm output, profits and market share
+}
 \description{
 This function numerically finds the equilibrium in a Cournot duopoly model with quadratic functions. For guaranteed existence of equilibrium, cost parameters should be non-negative.
 The general functional form for a function of argument x is f(x) = p_0 + p_1 x + p_2 x^2. Parameters c1 and c2 refer to firms 1 and 2. Parameters p refer to the inverse demand function.
+}
+\examples{
+
+cournot_solver(p_0 = 20)
+
+}
+\author{
+Diego S. Cardoso, Dyson School of Applied Economics & Management, Cornell University \email{mail@diegoscardoso.com}
 }

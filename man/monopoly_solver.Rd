@@ -22,6 +22,17 @@ monopoly_solver(c0 = 0, c1 = 1, c2 = 0, p0 = 0, p1 = -1,
 
 \item{q0}{Initial guess for monopolist's output. Defaults to 0. Strongly advise not to set this parameter unless you are very aware of what you're doing.}
 }
+\value{
+A list with market price, output, profits, markup, profitrate.
+}
 \description{
 This function numerically finds the profit-maximizing output for a monopolist with linear and non-linear cost and demand curves. For guaranteed existence of feasible solution (in which both price and output are positive), a linear demand curve might be necessary.
+}
+\examples{
+
+monopoly_solver(c0 = 20, p0 = 50 )
+
+}
+\author{
+Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
 }

@@ -82,7 +82,7 @@ Feel free to ask/suggest a model for implementation. If you want to implement on
 
 | Group                          | Example Coverage |
 |--------------------------------|------------------|
-| Imperfect Competition          |Uncovered         |
+| Imperfect Competition          |Covered           |
 | Growth Models and Steady State |Uncovered         | 
 | Cobb-Douglas Functions         |Uncovered         | 
 | Nash Equilibrium               |Uncovered         | 

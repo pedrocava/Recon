@@ -78,7 +78,7 @@ Feel free to ask/suggest a model for implementation. If you want to implement on
 
 # Documentation and Examples
 
-``Recon`` is a work in progress. Right now documentation is satisfactory, but there's little to no examples available in it. This is required by CRAN for approval and we are commited to provide examples to all functions. Exemple coverage by group:
+Example coverage by group:
 
 | Group                          | Example Coverage |
 |--------------------------------|------------------|

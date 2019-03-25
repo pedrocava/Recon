@@ -32,9 +32,9 @@ cournot_solver = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
                           p0 = 0, p1 = -1, p2 = 0) {
 
 
-    message(expr = p1 > 0,
-            "p1 > 0 makes the demand curve upwards sloping")
-
+    if(p1 > 0) {
+            warning("p1 > 0 makes the demand curve upwards sloping")
+    }
   # Define the first order condition functions to search for a fixed point
   focs <- function(q) c(
     foc1 <-  ( (p1 + 2*p2*sum(q))*q[1] + (p0 + p1*sum(q) + p2*sum(q)^2) - (c1_1 + 2*c1_2*q[1]) ),
@@ -99,8 +99,9 @@ monopoly_solver = function(c0 = 0,
                            p2 = 0,
                            q0 = 0) {
 
-    message(expr = p1 > 0,
-            "A positive p1 makes the demand curve upwards sloping. Consider setting it as a negative number.")
+  if(p1 > 0) {
+    warning("p1 > 0 makes the demand curve upwards sloping")
+  }
 
   # define First Order Condition (FOC) to search for a fixed point
   foc = function(q) c(p0 + 2*p1*q - c1 - 2*c2*q + 3*p2*(q^2))
@@ -165,8 +166,9 @@ stackelberg_solver = function(cl_0 = 0, cl_1 = 1,
 
 
 
-    message(expr = p1 > 0,
-            "p1 > 0 makes the demand curve upwards sloping")
+  if(p1 > 0) {
+    warning("p1 > 0 makes the demand curve upwards sloping")
+  }
 
   # Define the first order condition functions to search for a fixed point
   focs <- function(q) c(

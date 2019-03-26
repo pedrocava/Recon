@@ -2,4 +2,5 @@
 ^doc$
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^.travis.yml
+^.travis.yml$
+^README.md$

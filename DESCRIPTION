@@ -1,6 +1,6 @@
 Package: Recon
 Title: Economics with R
-Version: 0.1.0.9000
+Version: 0.1.0.0
 Authors@R: c(person(given = "Pedro", family = "Cavalcante Oliveira", 
               email = "pedrocolrj@gmail.com", 
               role = c("aut", "cre")),
@@ -12,10 +12,11 @@ Authors@R: c(person(given = "Pedro", family = "Cavalcante Oliveira",
               email = "marcelogelati@gmail.com"))
 Description: Implements and computes several economic models. 
 Depends: R (>= 3.4.0)
-License: GPL-3 + file LICENSE
+License: GPL-3 
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Imports: rootSolve,
           stats
 Suggests: plot3D, dplyr, ggplot2
+  

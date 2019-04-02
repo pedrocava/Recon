@@ -1,5 +1,5 @@
 Package: Recon
-Title: Economics with R
+Title: Computational Tools for Economics
 Version: 0.1.0.0
 Authors@R: c(person(given = "Pedro", family = "Cavalcante Oliveira", 
               email = "pedrocolrj@gmail.com", 
@@ -10,12 +10,12 @@ Authors@R: c(person(given = "Pedro", family = "Cavalcante Oliveira",
               person(given = "Marcelo", family = "Gelati",
               role = "aut",
               email = "marcelogelati@gmail.com"))
-Description: Implements and computes several economic models. 
+Description: Implements solutions to canonical models of Economics such as Monopoly Profit Maximization, Cournot's Duopoly, Solow's Growth Model and the MRW Growth Model.
 Depends: R (>= 3.4.0)
 License: GPL-3 
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1  
+RoxygenNote: 6.1.1
 Imports: rootSolve,
           stats
 Suggests: plot3D, dplyr, ggplot2

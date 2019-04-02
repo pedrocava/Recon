@@ -1,6 +1,6 @@
 #' Mankiw-Romer-Weil Growth Model Steady State
 #'
-#' This function computes steady state income, capital and human capital per worker given relevant parameters according to the modelo presented in Mankiw, Romer and Weil (1992).
+#' This function computes steady state income, capital and human capital per worker given relevant parameters according to the MRW model.
 #'
 #'
 #' @param sk is the savings rate devoted to physical capital. Defaults to .01.
@@ -46,7 +46,7 @@ MRW_steady_state <- function(n = .01,
 
 #' Solow Growth Model Steady State
 #'
-#' This function computes steady state income and capital per worker given relevant parameters according to the canonical model proposed by Solow (1956).
+#' This function computes steady state income and capital per worker given relevant parameters according to Solow-Swan Model.
 #' @param s is the savings rate. Defaults to .01.
 #' @param delta is the capital stock's depreciation rate. Defaults to .01.
 #' @param n is population growth rate. Defaults to .01.

@@ -28,7 +28,7 @@ MRW_steady_state(n = 0.01, g = 0.01, alpha = 0.33, beta = 0.33,
 List with steady state capital, human capital and income per capita
 }
 \description{
-This function computes steady state income, capital and human capital per worker given relevant parameters according to the modelo presented in Mankiw, Romer and Weil (1992).
+This function computes steady state income, capital and human capital per worker given relevant parameters according to the MRW model.
 }
 \examples{
 

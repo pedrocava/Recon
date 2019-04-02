@@ -160,9 +160,9 @@ sim_mixed_nasheq <- function(a, b) {
       print(c("Probability of playling the first row is =", x_l), quote = F)
       print(c("Probability of playling the first row is =", x_c), quote = F)
     } else {
-      print("There's no mixed strategies equilibrium", quote = F)
+      message("There's no mixed strategies equilibrium")
     }
   } else {
-    print("The payoff matrices must be 2x2", quote = F)
+    message("The payoff matrices must be 2x2")
   }
 }

@@ -10,7 +10,7 @@ Authors@R: c(person(given = "Pedro", family = "Cavalcante Oliveira",
               person(given = "Marcelo", family = "Gelati",
               role = "aut",
               email = "marcelogelati@gmail.com"))
-Description: Implements solutions to canonical models of Economics such as Monopoly Profit Maximization, Cournot's Duopoly, Solow's Growth Model and the MRW Growth Model.
+Description: Implements solutions to canonical models of Economics such as Monopoly Profit Maximization, Cournot's Duopoly, Solow (1956, <doi:10.2307/1884513>) growth model and Mankiw, Romer and Weil (1992, <doi:10.2307/2118477>) growth model.
 Depends: R (>= 3.4.0)
 License: GPL-3 
 Encoding: UTF-8

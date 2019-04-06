@@ -4,7 +4,7 @@
 
 ![GitHub release](https://img.shields.io/github/release-pre/pedrocava/Recon.svg?style=for-the-badge)
 
-![](http://cranlogs.r-pkg.org/badges/Recon)
+[![](https://cranlogs.r-pkg.org/badges/Recon)](https://cran.r-project.org/package=Recon)
 
 # Recon - Economics with R
 

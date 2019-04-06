@@ -4,6 +4,8 @@
 
 ![GitHub release](https://img.shields.io/github/release-pre/pedrocava/Recon.svg?style=for-the-badge)
 
+![](http://cranlogs.r-pkg.org/badges/Recon)
+
 # Recon - Economics with R
 
 This package aims to provide undergraduate students and professors realiable ways of computing and exploring canonical models in economics. It creates a rich enviroment for comparative statics, visualization of results and better understanding of model outcomes.

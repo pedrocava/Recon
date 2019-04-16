@@ -21,7 +21,7 @@
 
 \title{The Theory Behind Recon: Tools for Computational Economics}
 
-\author{Matheus Evangelsita\thanks{Departamento de Economia, Pontífice Universidade Católica do Rio de Janeiro (PUC-Rio)} \and Pedro Cavalcante Oliveira\thanks{Faculdade de Economia, Universidade Federal Fluminense (UFF) \and Marcelo Gelati \thanks{Instituto Nacional de Matemática Pura e Aplicada (IMPA) \and Diego S. Cardoso \thanks{Dyson School of Management and Applied Economics, Cornell University}}}}
+\author{Mateus Evangelsita\thanks{Departamento de Economia, Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)} \and Pedro Cavalcante Oliveira\thanks{Faculdade de Economia, Universidade Federal Fluminense (UFF) \and Marcelo Gelati \thanks{Instituto Nacional de Matemática Pura e Aplicada (IMPA) \and Diego S. Cardoso \thanks{Dyson School of Management and Applied Economics, Cornell University}}}}
 
 \begin{document}
 \maketitle
@@ -30,11 +30,157 @@
 
 \section{Cournot Model}
 \subsection{Duopoly with homo and heterogenous cost curves}
+
+Inverse demand function:
+\begin{equation*}
+	p(y_{1} + y_{2}) = a(y_{1} + y_{2})^2 + b(y_{1} + y_{2})  + c
+\end{equation*}
+Let $y_{1}^e$ and $y_{2}^e$ be the expected output of firm 1 and 2, respectively \\
+Firm 1's cost function:
+\begin{equation*} 
+	C_{1}(y_{1}) = \alpha _{1}y_{1}^2 + \beta _{1}y_{1} + \theta _{1}
+\end{equation*}
+Firm 2's cost function:
+\begin{equation*}
+	C_{2}(y_{2}) = \alpha _{2}y_{2}^2 + \beta _{2}y_{2} + \theta _{2}
+\end{equation*}
+Firm 1's profit:
+\begin{equation*}
+	\Pi _{1} = p(y_{1} + y_{2}^e)y_{1} - C_{1}(y_{1})
+\end{equation*}
+Firm 1's profit maximization:
+\begin{equation*}
+	\frac{\partial\Pi_{1}}{\partial y_{1}} = 0
+\end{equation*}
+\begin{equation*}
+	\frac{\partial p(y_{1} + y_{2}^e)}{\partial y_{1}}y_{1} + p(y_{1} + y_{2}^e) - \frac{dC_{1}(y_{1})}{dy_{1}} = 0
+\end{equation*}
+\begin{equation*}
+	3ay_{1}^2 + 4ay_{1}y_{2}^e + a(y_{2}^e)^2 + 2by_{1} + by_{2}^e + c - 2\alpha _{1}y_{1} - \beta _{1} = 0
+\end{equation*}
+
+Firm 2's profit:
+\begin{equation*} 
+	\Pi _{2} = p(y_{1}^e + y_{2})y_{2} - C_{2}(y_{2})
+\end{equation*}
+Firm 2's profit maximization:
+\begin{equation*} 
+	\frac{\partial\Pi_{2}}{\partial y_{2}} = 0
+\end{equation*}
+\begin{equation*} 
+	\frac{\partial p(y_{1}^e + y_{2})}{\partial y_{2}}y_{2} + p(y_{1}^e + y_{2}) - \frac{dC_{2}(y_{2})}{dy_{2}} = 0
+\end{equation*}
+\begin{equation*} 
+	3ay_{2}^2 + 4ay_{2}y_{1} + ay_{1}^2 + 2by_{2} + by_{1} + c - 2\alpha _{2}y_{2} - \beta _{2} = 0
+\end{equation*}
+Profit-maximization conditions:
+\begin{equation*}
+	\begin{cases}
+		3ay_{1}^2 + 4ay_{1}y_{2}^e + a(y_{2}^e)^2 + 2by_{1} + by_{2}^e + c - 2\alpha _{1}y_{1} - \beta _{1} = 0 \\
+		3ay_{2}^2 + 4ay_{2}y_{1}^e + a(y_{1}^e)^2 + 2by_{2} + by_{1}^e + c - 2\alpha _{2}y_{2} - \beta _{2} = 0
+	\end{cases}
+\end{equation*}
+
 \subsection{Oligopoly with homogenous cost curves}
+
+Suppose there are $n$ firms. Let $y_{i}$ be the firm i's output and let $Y$ be the industry output.
+\begin{equation*}
+	Y = \sum_{i = 1}^{n}y_{i}
+\end{equation*}
+Firm i's cost function:
+\begin{equation*}
+	C(y_{i}) = \alpha y_{i}^2 + \beta y_{i} + \theta
+\end{equation*}
+Firm i's profit:
+\begin{equation*}
+	\Pi _{i} = p(Y)y_{i} - C(y_{i})
+\end{equation*}
+Firm i's profit maximization:
+\begin{equation*}
+	\frac{\partial \Pi_{i}}{\partial y_{i}} = 0
+\end{equation*}
+\begin{equation*}
+	p(Y) + \frac{\partial p(Y)}{\partial Y}y_{i} - \frac{dC(y_{i})}{dy_{i}} = 0
+\end{equation*}
+\begin{equation*}
+	aY^2 + bY + c + 2aYy_{i} - 2\alpha y_{i} - \beta = 0
+\end{equation*}
 
 \section{Monopolistic Behavior}
 
+Inverse demand function:
+\begin{equation*}
+	p(y) = ay^2 + by  + c
+\end{equation*}
+Monopolist's cost function:
+\begin{equation*} 
+	C(y) = \alpha y^2 + \beta y + \theta
+\end{equation*}
+Monopolist's profit:
+\begin{equation*}
+	\Pi = p(y)y - C(y)
+\end{equation*}
+Monopolist's profit maximization:
+\begin{equation*}
+	\frac{d\Pi}{dy} = 0
+\end{equation*}
+\begin{equation*}
+	p(y) + \frac{dp(y)}{dy}y - \frac{dC(y)}{dy} = 0
+\end{equation*}
+\begin{equation*}
+	3ay^2 + 2by + c - 2\alpha y - \beta= 0
+\end{equation*}
+
 \section{Stackelberg Model}
+
+Suppose there are two firms. Firm 1 is the leader and chooses to produce a quantity $y_{1}$. Firm 2 is the follower and responds by choosing to produce $y_{2}$. $Y$ is the total industry output.\\
+Inverse demand function:
+\begin{equation*}
+	p(y_{1} + y_{2}) = a(y_{1} + y_{2})^2 + b(y_{1} + y_{2})  + c
+\end{equation*}
+Firm 1's cost function:
+\begin{equation*} 
+	C_{1}(y_{1}) = \alpha _{1}y_{1}^2 + \beta _{1}y_{1} + \theta _{1}
+\end{equation*}
+Firm 2's cost function:
+\begin{equation*}
+	C_{2}(y_{2}) = \alpha _{2}y_{2}^2 + \beta _{2}y_{2} + \theta _{2}
+\end{equation*}
+Follower's profit:
+\begin{equation*}
+	\Pi _{2} = p(y_{i} + y_{2})y_{2} - C_{2}(y_{2})
+\end{equation*}
+Follower's profit-maximization problem:
+\begin{equation*}
+	\frac{\partial\Pi_{2}}{\partial y_{2}} = 0
+\end{equation*}
+\begin{equation*}
+	p(Y) + \frac{\partial p(Y)}{\partial y_{2}}y_{2} - \frac{dC_{2}(y_{2})}{dy_{2}} = 0
+\end{equation*}
+\begin{equation*} 
+	ay_{2}^2 + 2ay_{2}y_{1} + ay_{1}^2 + by_{2} + by_{1} + c + 2ay_{2}^2 + 2ay_{2}y_{1}^e + by_{2} - 2\alpha _{2}y_{2} - \beta _{2} = 0
+\end{equation*}
+Leader's profit:
+\begin{equation*}
+	\Pi _{1} = p(y_{1} + y_{2})y_{1} - C_{1}(y_{1})
+\end{equation*}
+Leader's profit-maximization problem:
+\begin{equation*}
+	\frac{\partial\Pi_{1}}{\partial y_{1}} = 0
+\end{equation*}
+\begin{equation*}
+	p(Y) + \frac{\partial p(Y)}{\partial y_{1}}y_{1} - \frac{dC_{1}(y_{1})}{dy_{1}} = 0
+\end{equation*}
+\begin{equation*} 
+	ay_{1}^2 + 2ay_{1}y_{2} + ay_{2}^2 + by_{1} + by_{2} + c + 2ay_{1}^2 + 2ay_{1}y_{2}^e + by_{1} - 2\alpha _{1}y_{1} - \beta _{1} = 0
+\end{equation*}
+Profit-maximization conditions:
+\begin{equation*}
+	\begin{cases}
+		ay_{2}^2 + 2ay_{2}y_{1} + ay_{1}^2 + by_{2} + by_{1} + c + 2ay_{2}^2 + 2ay_{2}y_{1}^e + by_{2} - 2\alpha _{2}y_{2} - \beta _{2} = 0 \\
+		ay_{1}^2 + 2ay_{1}y_{2} + ay_{2}^2 + by_{1} + by_{2} + c + 2ay_{1}^2 + 2ay_{1}y_{2}^e + by_{1} - 2\alpha _{1}y_{1} - \beta _{1} = 0
+	\end{cases}
+\end{equation*}
 
 \section{Bertrand Model with product differentiation}
 

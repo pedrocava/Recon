@@ -90,15 +90,22 @@ Feel free to ask/suggest a model for implementation. If you want to implement on
 * Solution to a Bertrand Duopoly Model with differentiated goods
 * Solution to a Cournot Oligpoly with n firms and homogenous cost functions
 
-# Documentation and Examples
+# Citation
 
-Example coverage by group:
+To cite package ‘Recon’ in publications use:
 
-| Group                          | Example Coverage |
-|--------------------------------|------------------|
-| Imperfect Competition          |Covered           |
-| Growth Models and Steady State |Covered           | 
-| Cobb-Douglas Functions         |Covered           | 
-| Nash Equilibrium               |Covered           | 
-| Misc.                          |Covered           |  
+  Pedro Cavalcante Oliveira, Diego S. Cardoso and Marcelo Gelati (2019). Recon:
+  Computational Tools for Economics. R package version 0.1.0.0.
+  https://CRAN.R-project.org/package=Recon
 
+A BibTeX entry for LaTeX users is:
+
+```
+  @Manual{,
+    title = {Recon: Computational Tools for Economics},
+    author = {Pedro {Cavalcante Oliveira} and Diego {S. Cardoso} and Marcelo Gelati},
+    year = {2019},
+    note = {R package version 0.1.0.0},
+    url = {https://CRAN.R-project.org/package=Recon},
+  }
+```

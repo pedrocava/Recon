@@ -6,7 +6,7 @@
 
 [![](https://cranlogs.r-pkg.org/badges/Recon)](https://cran.r-project.org/package=Recon)
 
-# Recon - Economics with R
+# Recon - Computational Tools for Economics
 
 This package aims to provide undergraduate students and professors realiable ways of computing and exploring canonical models in economics. It creates a rich enviroment for comparative statics, visualization of results and better understanding of model outcomes.
 

@@ -6,6 +6,8 @@
 
 [![](https://cranlogs.r-pkg.org/badges/Recon)](https://cran.r-project.org/package=Recon)
 
+[![Rdoc](http://www.rdocumentation.org/badges/version/Recon)](http://www.rdocumentation.org/packages/Recon)
+
 # Recon - Computational Tools for Economics
 
 This package aims to provide undergraduate students and professors realiable ways of computing and exploring canonical models in economics. It creates a rich enviroment for comparative statics, visualization of results and better understanding of model outcomes.
@@ -17,6 +19,10 @@ You can install the latest version of ``Recon`` by running:
 ``` r
 install.packages('devtools')
 devtools::install_github('pedrocava/Recon')
+
+## or directly from CRAN
+
+install.packages('Recon')
 ```
 
 Which should return something similar to:

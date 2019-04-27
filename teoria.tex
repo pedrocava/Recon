@@ -7,7 +7,7 @@
 
 
 %% Sets page size and margins
-\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=2cm]{geometry}
 
 %% Useful packages
 \usepackage{amsmath}
@@ -21,12 +21,16 @@
 
 \title{The Theory Behind Recon: Tools for Computational Economics}
 
-\author{Mateus Evangelsita\thanks{Departamento de Economia, Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)} \and Pedro Cavalcante Oliveira\thanks{Faculdade de Economia, Universidade Federal Fluminense (UFF) \and Marcelo Gelati \thanks{Instituto Nacional de Matemática Pura e Aplicada (IMPA) \and Diego S. Cardoso \thanks{Dyson School of Management and Applied Economics, Cornell University}}}}
+\author{Mateus Evangelsita\thanks{Department of Economics, Pontifical Catholic University of Rio de Janeiro (PUC-Rio)} \and Pedro Cavalcante Oliveira\thanks{School of Economics, Federal Fluminense University (UFF) \and Marcelo Gelati \thanks{National Institute of Pure and Applied Mathematics (IMPA) \and Diego S. Cardoso \thanks{Dyson School of Management and Applied Economics, Cornell University}}}}
 
 \begin{document}
 \maketitle
 
 \section{Introduction}
+
+\texttt{Recon} is a package made for solving and exploring economic models. Altough for some models there are clearly defined, notoriously famous analytic solutions to problems we, as users and developers, are interested in - such as Solow's and Mankiw, Romer and Weil's growth models - that is not always the case. \texttt{Recon} is a flexible package, and it comes at a certain cost. We wanted to make sure most of our solutions (at least for imperfect competition models) worked with non-linear cost and demand curves and here is where problems show up.
+
+Our solvers work their way around the lack of clearly defined analytical solutions by setting up systems with First Order Conditions arising from profit maximization problems. The user then only has to specify cost, demand curves by giving parameters and the solver does the rest. The downside of this reasonably flexible method is that source-code seems senseless for those familiar with the linear version of these models. This document exposes the theory behind our implementations.
 
 \section{Cournot Model}
 \subsection{Duopoly with homo and heterogenous cost curves}
@@ -37,7 +41,7 @@ Inverse demand function:
 \end{equation*}
 Let $y_{1}^e$ and $y_{2}^e$ be the expected output of firm 1 and 2, respectively \\
 Firm 1's cost function:
-\begin{equation*} 
+\begin{equation*}
 	C_{1}(y_{1}) = \alpha _{1}y_{1}^2 + \beta _{1}y_{1} + \theta _{1}
 \end{equation*}
 Firm 2's cost function:
@@ -60,17 +64,17 @@ Firm 1's profit maximization:
 \end{equation*}
 
 Firm 2's profit:
-\begin{equation*} 
+\begin{equation*}
 	\Pi _{2} = p(y_{1}^e + y_{2})y_{2} - C_{2}(y_{2})
 \end{equation*}
 Firm 2's profit maximization:
-\begin{equation*} 
+\begin{equation*}
 	\frac{\partial\Pi_{2}}{\partial y_{2}} = 0
 \end{equation*}
-\begin{equation*} 
+\begin{equation*}
 	\frac{\partial p(y_{1}^e + y_{2})}{\partial y_{2}}y_{2} + p(y_{1}^e + y_{2}) - \frac{dC_{2}(y_{2})}{dy_{2}} = 0
 \end{equation*}
-\begin{equation*} 
+\begin{equation*}
 	3ay_{2}^2 + 4ay_{2}y_{1} + ay_{1}^2 + 2by_{2} + by_{1} + c - 2\alpha _{2}y_{2} - \beta _{2} = 0
 \end{equation*}
 Profit-maximization conditions:
@@ -113,7 +117,7 @@ Inverse demand function:
 	p(y) = ay^2 + by  + c
 \end{equation*}
 Monopolist's cost function:
-\begin{equation*} 
+\begin{equation*}
 	C(y) = \alpha y^2 + \beta y + \theta
 \end{equation*}
 Monopolist's profit:
@@ -139,7 +143,7 @@ Inverse demand function:
 	p(y_{1} + y_{2}) = a(y_{1} + y_{2})^2 + b(y_{1} + y_{2})  + c
 \end{equation*}
 Firm 1's cost function:
-\begin{equation*} 
+\begin{equation*}
 	C_{1}(y_{1}) = \alpha _{1}y_{1}^2 + \beta _{1}y_{1} + \theta _{1}
 \end{equation*}
 Firm 2's cost function:
@@ -157,7 +161,7 @@ Follower's profit-maximization problem:
 \begin{equation*}
 	p(Y) + \frac{\partial p(Y)}{\partial y_{2}}y_{2} - \frac{dC_{2}(y_{2})}{dy_{2}} = 0
 \end{equation*}
-\begin{equation*} 
+\begin{equation*}
 	ay_{2}^2 + 2ay_{2}y_{1} + ay_{1}^2 + by_{2} + by_{1} + c + 2ay_{2}^2 + 2ay_{2}y_{1}^e + by_{2} - 2\alpha _{2}y_{2} - \beta _{2} = 0
 \end{equation*}
 Leader's profit:
@@ -171,7 +175,7 @@ Leader's profit-maximization problem:
 \begin{equation*}
 	p(Y) + \frac{\partial p(Y)}{\partial y_{1}}y_{1} - \frac{dC_{1}(y_{1})}{dy_{1}} = 0
 \end{equation*}
-\begin{equation*} 
+\begin{equation*}
 	ay_{1}^2 + 2ay_{1}y_{2} + ay_{2}^2 + by_{1} + by_{2} + c + 2ay_{1}^2 + 2ay_{1}y_{2}^e + by_{1} - 2\alpha _{1}y_{1} - \beta _{1} = 0
 \end{equation*}
 Profit-maximization conditions:

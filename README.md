@@ -111,7 +111,7 @@ A BibTeX entry for LaTeX users is:
     title = {Recon: Computational Tools for Economics},
     author = {Pedro {Cavalcante Oliveira} and Diego {S. Cardoso} and Marcelo Gelati},
     year = {2019},
-    note = {R package version 0.1.0.0},
+    note = {R package version 0.2.0.0},
     url = {https://CRAN.R-project.org/package=Recon},
   }
 ```

@@ -4,21 +4,15 @@
 \alias{stackelberg_solver}
 \title{Stackelberg Duopoly with numeric solution}
 \usage{
-stackelberg_solver(cl_0 = 0, cl_1 = 1, cf_0 = 0, cf_1 = 1,
-  p0 = 0, p1 = -1, l0 = 0, f0 = 0)
+stackelberg_solver(leader = c(0, 1), follower = c(0, 1),
+  demand = c(0, -1), l0 = 0, f0 = 0)
 }
 \arguments{
-\item{cl_0}{intercept of leader's cost function}
+\item{leader}{vector of coefficients of the leader's cost function which in order must be: intercept of leader's cost function and linear term's parameter of leader's cost function}
 
-\item{cl_1}{linear term's parameter of leader's cost function}
+\item{follower}{vector of coefficients of the follower's cost function which in order must be: intercept of intercept of follower's cost function linear term's parameter of follower's cost function}
 
-\item{cf_0}{intercept of follower's cost function}
-
-\item{cf_1}{linear term's parameter of follower's cost function}
-
-\item{p0}{intercept of inverse demand function. Defaults to 0.}
-
-\item{p1}{linear term's parameter of inverse demand function. Defaults to -1. Note that it is important to specify it as a negative number, or the demand curve will be upward sloping.}
+\item{demand}{vector of coefficients of the market demand curve. Must be, in order, intercept and linear coefficient.}
 
 \item{l0}{Initial guess for leader's output. Defaults to 0. Strongly advised not to set this parameter unless you are very aware of what you're doing.}
 
@@ -34,9 +28,12 @@ The firm indexed by "l" is the leader, and the one indexed by "f" is the followe
 }
 \examples{
 
-stackelberg_solver(p0 = 30)
+l = c(100, 4)
+f = c(120, 5)
+p = c(300, -10)
+stackelberg_solver(leader = l, follower = f, demand = p)
 
 }
 \author{
-Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
+Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University \email{pedrocolrj@gmail.com}
 }

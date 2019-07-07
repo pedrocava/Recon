@@ -4,38 +4,26 @@
 \alias{cournot_solver}
 \title{Cournot Duopoly with numeric solution}
 \usage{
-cournot_solver(c1_0 = 0, c1_1 = 1, c1_2 = 0, c2_0 = 0, c2_1 = 1,
-  c2_2 = 0, p0 = 0, p1 = -1, p2 = 0)
+cournot_solver(firm1 = c(0, 1, 0), firm2 = c(0, 1, 0), demand = c(0,
+  -1, 0))
 }
 \arguments{
-\item{c1_0}{intercept of firm 1's cost function}
+\item{firm1}{a vector of cost curve coefficients, which must be in order: intercept of firm 1's cost function, linear term's parameter of firm 1's cost function and quadratic term's parameter of firm 1's cost function}
 
-\item{c1_1}{linear term's parameter of firm 1's cost function}
+\item{firm2}{a vector of cost curve coefficients, which must be in order: intercept of firm 2's cost function, linear term's parameter of firm 2's cost function and quadratic term's parameter of firm 2's cost function}
 
-\item{c1_2}{quadratic term's parameter of firm 1's cost function}
-
-\item{c2_0}{intercept of firm 2's cost function}
-
-\item{c2_1}{linear term's parameter of firm 2's cost function}
-
-\item{c2_2}{quadratic term's parameter of firm 2's cost function}
-
-\item{p0}{intercept of inverse demand function}
-
-\item{p1}{linear term's parameter of inverse demand function}
-
-\item{p2}{quadratic term's parameter of inverse demand function}
+\item{demand}{a vector of demand curve coefficients, which must be in order: intercept of inverse demand function, linear coefficient, secon degree coefficient}
 }
 \value{
 List with market price, firm output, profits and market share
 }
 \description{
 This function numerically finds the equilibrium in a Cournot duopoly model with quadratic functions. For guaranteed existence of equilibrium, cost parameters should be non-negative.
-The general functional form for a function of argument x is \eqn{f(x) = p_0 + p_1 x + p_2 x^2}. Parameters c1 and c2 refer to firms 1 and 2. Parameters p refer to the inverse demand function.
 }
 \examples{
 
-cournot_solver(p0 = 20)
+d = c(20,-1,0)
+cournot_solver(demand = d)
 
 }
 \author{

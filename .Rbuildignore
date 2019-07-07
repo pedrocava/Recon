@@ -5,3 +5,6 @@
 ^.travis.yml$
 ^README.md$
 ^LICENSE
+^teoria.log
+^teoria.tex
+

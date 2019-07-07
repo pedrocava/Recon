@@ -1,18 +1,11 @@
 #' Cournot Duopoly with numeric solution
 #'
 #' This function numerically finds the equilibrium in a Cournot duopoly model with quadratic functions. For guaranteed existence of equilibrium, cost parameters should be non-negative.
-#' The general functional form for a function of argument x is \eqn{f(x) = p_0 + p_1 x + p_2 x^2}. Parameters c1 and c2 refer to firms 1 and 2. Parameters p refer to the inverse demand function.
 #'
 #'
-#' @param c1_0 intercept of firm 1's cost function
-#' @param c1_1 linear term's parameter of firm 1's cost function
-#' @param c1_2 quadratic term's parameter of firm 1's cost function
-#' @param c2_0 intercept of firm 2's cost function
-#' @param c2_1 linear term's parameter of firm 2's cost function
-#' @param c2_2 quadratic term's parameter of firm 2's cost function
-#' @param p0 intercept of inverse demand function
-#' @param p1 linear term's parameter of inverse demand function
-#' @param p2 quadratic term's parameter of inverse demand function
+#' @param firm1 a vector of cost curve coefficients, which must be in order: intercept of firm 1's cost function, linear term's parameter of firm 1's cost function and quadratic term's parameter of firm 1's cost function
+#' @param firm2 a vector of cost curve coefficients, which must be in order: intercept of firm 2's cost function, linear term's parameter of firm 2's cost function and quadratic term's parameter of firm 2's cost function
+#' @param demand a vector of demand curve coefficients, which must be in order: intercept of inverse demand function, linear coefficient, secon degree coefficient
 #'
 #'
 #' @return List with market price, firm output, profits and market share
@@ -21,15 +14,30 @@
 #'
 #' @examples
 #'
-#' cournot_solver(p0 = 20)
+#' d = c(20,-1,0)
+#' cournot_solver(demand = d)
 #'
 #' @author Diego S. Cardoso, Dyson School of Applied Economics & Management, Cornell University \email{mail@@diegoscardoso.com}
 #'
 #' @export
 
-cournot_solver = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
-                          c2_0 = 0, c2_1 = 1, c2_2 = 0,
-                          p0 = 0, p1 = -1, p2 = 0) {
+cournot_solver = function(firm1 = c(0,1,0),
+                          firm2 = c(0,1,0),
+                          demand = c(0,-1,0)) {
+
+
+    p0 = demand[1]
+    p1 = demand[2]
+    p2 = demand[3]
+
+    c1_0 = firm1[1]
+    c1_1 = firm1[2]
+    c1_2 = firm1[3]
+
+    c2_0 = firm2[1]
+    c2_1 = firm2[2]
+    c2_2 = firm2[3]
+
 
 
     if(p1 > 0) {
@@ -67,12 +75,8 @@ cournot_solver = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
 #'
 #' This function numerically finds the profit-maximizing output for a monopolist with linear and non-linear cost and demand curves. For guaranteed existence of feasible solution (in which both price and output are positive), a linear demand curve might be necessary.
 #'
-#' @param c0 intercept of monopolist's cost function. Defaults to 0.
-#' @param c1 linear term's parameter of monopolist's cost function. Defaults to 1.
-#' @param c2 quadratic terms's parameter of the monopolist's cost function. Defaults to 0.
-#' @param p0 intercept of inverse demand function. Defaults to 0.
-#' @param p1 linear term's parameter of inverse demand function. Defaults to -1. Note that it is important to specify it as a negative number, or the demand curve will be upward sloping.
-#' @param p2 quadratic terms's parameter of the demand curve. Defaults to 0.
+#' @param cost a vector of cost curve coefficients, which must be in order: intercept of the cost function, linear term's parameter of the cost function and quadratic term's parameter of the cost function
+#' @param demand a vector of demand curve coefficients, which must be in order: intercept of inverse demand function, linear coefficient, secon degree coefficient
 #' @param q0 Initial guess for monopolist's output. Defaults to 0. Strongly advise not to set this parameter unless you are very aware of what you're doing.
 #'
 #' @return
@@ -83,21 +87,30 @@ cournot_solver = function(c1_0 = 0, c1_1 = 1, c1_2 = 0,
 #'
 #' @examples
 #'
-#' monopoly_solver(c0 = 20, p0 = 50 )
 #'
-#' @author Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
+#' c = c(50, 3, 1)
+#' p = c(500, -8, -1)
+#' monopoly_solver(cost = c, demand = p)
+#'
+#' @author Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University \email{pedrocolrj@@gmail.com}
 #'
 #' @export
 
 
 
-monopoly_solver = function(c0 = 0,
-                           c1 = 1,
-                           c2 = 0,
-                           p0 = 0,
-                           p1 = -1,
-                           p2 = 0,
+monopoly_solver = function(cost = c(0,1,0),
+                           demand = c(0,-1,0),
                            q0 = 0) {
+
+
+  p0 = demand[1]
+  p1 = demand[2]
+  p2 = demand[3]
+
+  c0 = cost[1]
+  c1 = cost[2]
+  c2 = cost[3]
+
 
   if(p1 > 0) {
     message("p1 > 0 makes the demand curve upwards sloping")
@@ -135,12 +148,9 @@ monopoly_solver = function(c0 = 0,
 #' The general functional form for a function of argument x is \eqn{f(x) = p_0 + p_1 x}. Parameters p refer to the inverse demand function.
 #' The firm indexed by "l" is the leader, and the one indexed by "f" is the follower.
 #'
-#' @param cl_0 intercept of leader's cost function
-#' @param cl_1 linear term's parameter of leader's cost function
-#' @param cf_0 intercept of follower's cost function
-#' @param cf_1 linear term's parameter of follower's cost function
-#' @param p0 intercept of inverse demand function. Defaults to 0.
-#' @param p1 linear term's parameter of inverse demand function. Defaults to -1. Note that it is important to specify it as a negative number, or the demand curve will be upward sloping.
+#' @param leader vector of coefficients of the leader's cost function which in order must be: intercept of leader's cost function and linear term's parameter of leader's cost function
+#' @param follower vector of coefficients of the follower's cost function which in order must be: intercept of intercept of follower's cost function linear term's parameter of follower's cost function
+#' @param demand vector of coefficients of the market demand curve. Must be, in order, intercept and linear coefficient.
 #' @param l0 Initial guess for leader's output. Defaults to 0. Strongly advised not to set this parameter unless you are very aware of what you're doing.
 #' @param f0 Initial guess for follower's output. Defaults to 0. Strongly advised not to set this parameter unless you are very aware of what you're doing.
 #'
@@ -150,19 +160,32 @@ monopoly_solver = function(c0 = 0,
 #'
 #' @examples
 #'
-#' stackelberg_solver(p0 = 30)
+#' l = c(100, 4)
+#' f = c(120, 5)
+#' p = c(300, -10)
+#' stackelberg_solver(leader = l, follower = f, demand = p)
 #'
 #' @import rootSolve
 #'
-#' @author Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
+#' @author Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University \email{pedrocolrj@@gmail.com}
 #'
 #' @export
 
-stackelberg_solver = function(cl_0 = 0, cl_1 = 1,
-                              cf_0 = 0, cf_1 = 1,
-                              p0 = 0, p1 = -1,
+stackelberg_solver = function(leader = c(0,1),
+                              follower = c(0,1),
+                              demand = c(0,-1),
                               l0 = 0, f0 = 0) {
 
+  p0 = demand[1]
+  p1 = demand[2]
+
+
+  cl_0 = leader[1]
+  cl_1 = leader[2]
+
+
+  cf_0 = follower[1]
+  cf_1 = follower[2]
 
 
 

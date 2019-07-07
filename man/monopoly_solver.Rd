@@ -4,21 +4,12 @@
 \alias{monopoly_solver}
 \title{Monopoly Profit Maximization}
 \usage{
-monopoly_solver(c0 = 0, c1 = 1, c2 = 0, p0 = 0, p1 = -1,
-  p2 = 0, q0 = 0)
+monopoly_solver(cost = c(0, 1, 0), demand = c(0, -1, 0), q0 = 0)
 }
 \arguments{
-\item{c0}{intercept of monopolist's cost function. Defaults to 0.}
+\item{cost}{a vector of cost curve coefficients, which must be in order: intercept of the cost function, linear term's parameter of the cost function and quadratic term's parameter of the cost function}
 
-\item{c1}{linear term's parameter of monopolist's cost function. Defaults to 1.}
-
-\item{c2}{quadratic terms's parameter of the monopolist's cost function. Defaults to 0.}
-
-\item{p0}{intercept of inverse demand function. Defaults to 0.}
-
-\item{p1}{linear term's parameter of inverse demand function. Defaults to -1. Note that it is important to specify it as a negative number, or the demand curve will be upward sloping.}
-
-\item{p2}{quadratic terms's parameter of the demand curve. Defaults to 0.}
+\item{demand}{a vector of demand curve coefficients, which must be in order: intercept of inverse demand function, linear coefficient, secon degree coefficient}
 
 \item{q0}{Initial guess for monopolist's output. Defaults to 0. Strongly advise not to set this parameter unless you are very aware of what you're doing.}
 }
@@ -30,9 +21,12 @@ This function numerically finds the profit-maximizing output for a monopolist wi
 }
 \examples{
 
-monopoly_solver(c0 = 20, p0 = 50 )
+
+c = c(50, 3, 1)
+p = c(500, -8, -1)
+monopoly_solver(cost = c, demand = p)
 
 }
 \author{
-Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University
+Pedro Cavalcante Oliveira, Department of Economics, Fluminense Federal University \email{pedrocolrj@gmail.com}
 }

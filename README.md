@@ -93,25 +93,29 @@ matrices
 
 Feel free to ask/suggest a model for implementation. If you want to implement one youself, fork this repo and then do a pull request with your new functions. After reviewing, you'll be credited and your functions will be part of ``Recon``. Features that are currently under work:
 
-* Solution to a Bertrand Duopoly Model with differentiated goods
-* Solution to a Cournot Oligpoly with n firms and homogenous cost functions
+* Bertrand Duopoly Model with differentiated goods
+* Cournot Oligpoly with n firms and homogenous cost functions
+* McCall Search Model
+* Optimal consumer choice
+* Optimal output for a single firm under perfect competition
+* Walrasian Auctions and primitive forms of Computable General Equilibrium 
 
 # Citation
 
 To cite package ‘Recon’ in publications use:
 
   Pedro Cavalcante Oliveira, Diego S. Cardoso and Marcelo Gelati (2019). Recon:
-  Computational Tools for Economics. R package version 0.1.0.0.
+  Computational Tools for Economics. R package version 0.3.0.0.
   https://CRAN.R-project.org/package=Recon
 
 A BibTeX entry for LaTeX users is:
 
 ```
-  @Manual{,
+  @Manual{recon,
     title = {Recon: Computational Tools for Economics},
     author = {Pedro {Cavalcante Oliveira} and Diego {S. Cardoso} and Marcelo Gelati},
     year = {2019},
-    note = {R package version 0.2.0.0},
+    note = {R package version 0.3.0.0},
     url = {https://CRAN.R-project.org/package=Recon},
   }
 ```

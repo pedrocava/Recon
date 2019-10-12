@@ -100,6 +100,14 @@ Feel free to ask/suggest a model for implementation. If you want to implement on
 * Optimal output for a single firm under perfect competition
 * Walrasian Auctions and primitive forms of Computable General Equilibrium 
 
+# What we're aiming for in the long run
+
+Right now ``Recon`` is just a small group of relatively simple functions. There's a lot to be made before version 1.0, but here's a taste of what's planned for it:
+
+* Classes representing economic entities such as consumers, firms and markets.
+* Methods for handling these classes and solving models with them
+* Rich variety of functions for visualization and comparative statics
+
 # Citation
 
 To cite package ‘Recon’ in publications use:

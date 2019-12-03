@@ -108,7 +108,7 @@ Right now ``Recon`` is just a small group of relatively simple functions. There'
 
 To cite package ‘Recon’ in publications use:
 
-  Pedro Cavalcante Oliveira, Diego S. Cardoso and Marcelo Gelati (2019). Recon:
+ > Pedro Cavalcante Oliveira, Diego S. Cardoso and Marcelo Gelati (2019). Recon:
   Computational Tools for Economics. R package version 0.3.0.0.
   https://CRAN.R-project.org/package=Recon
 

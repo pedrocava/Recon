@@ -2,7 +2,7 @@
 ![GitHub](https://img.shields.io/github/license/pedrocava/Recon.svg?style=for-the-badge)
 ![GitHub release](https://img.shields.io/github/release-pre/pedrocava/Recon.svg?style=for-the-badge)
 [![](https://cranlogs.r-pkg.org/badges/Recon)](https://cran.r-project.org/package=Recon)
-[![Rdoc](http://www.rdocumentation.org/badges/version/Recon)](http://www.rdocumentation.org/packages/Recon)
+[![Rdoc](http://www.rdocumentation.org/badges/version/Recon)](http://www.rdocumentation.org/packages/Recon)                 [![](https://cranlogs.r-pkg.org/badges/Recon)](https://cran.r-project.org/package=Recon)
 
 # Recon - Computational Tools for Economics
 

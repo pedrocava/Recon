@@ -13,7 +13,6 @@ This package aims to provide undergraduate students and professors realiable way
 You can install the latest version of ``Recon`` by running:
 
 ``` r
-install.packages('devtools')
 devtools::install_github('pedrocava/Recon')
 
 ## or directly from CRAN
